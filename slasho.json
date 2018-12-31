@@ -1,0 +1,299 @@
+[{
+  "year":2018,
+  "data":[{
+    "title": "StickMan RUn Game created using JavaScript",
+    "url": "https://github.com/notshekhar/stickmanRun",
+    "date": "Dec 31, 2018",
+    "demo": "https://notshekhar.github.io/stickmanRun/",
+    "type": "cc"
+  },{
+    "title": "Drawing cat using doodle data with node.js ( used expressjs to setup the server )",
+    "url": "https://github.com/notshekhar/Drawing-cat-using-doodle-data-with-node.js-",
+    "date": "Dec 24, 2018",
+    "type": "bed"
+  },{
+    "title": "MNIST Classifier using Convolutional Neural Network with TensorFlow.js",
+    "url": "https://github.com/notshekhar/convolutionalNeuralNetwork",
+    "date": "Dec 23, 2018",
+    "demo": "https://notshekhar.github.io/convolutionalNeuralNetwork/",
+    "type": "ml"
+  },{
+    "title": "Custom HTML Video Element using JavaScript",
+    "url": "https://github.com/notshekhar/customElements/blob/master/slashoVideo.js",
+    "date": "Dec 23, 2018",
+    "type": "cc"
+  },{
+    "title": "Fouries Series",
+    "url": "https://github.com/notshekhar/fouriesSeries",
+    "date": "Dec 21, 2018",
+    "demo": "https://notshekhar.github.io/fouriesSeries/",
+    "type": "cc"
+  },{
+    "title": "AI learns to play Flappy Bird ( neuroevolution )",
+    "url": "https://github.com/notshekhar/neuroevolutionFlappyBird",
+    "date": "Dec 20, 2018",
+    "demo": "https://notshekhar.github.io/neuroevolutionFlappyBird/",
+    "type": "ml"
+  },{
+    "title": "10Print pattern",
+    "url": "https://github.com/notshekhar/10Print",
+    "date": "Dec 19, 2018",
+    "demo": "https://notshekhar.github.io/10Print/",
+    "type": "cc"
+  },{
+    "title": "Flappy Bird",
+    "url": "https://github.com/notshekhar/flappyBird",
+    "date": "Dec 18, 2018",
+    "demo": "https://notshekhar.github.io/flappyBird/",
+    "type": "cc"
+  },{
+    "title": "2048 Game",
+    "url": "https://github.com/notshekhar/2048",
+    "date": "Dec 17, 2018",
+    "demo": "https://notshekhar.github.io/2048/",
+    "type": "cc"
+  },{
+    "title": "For Mooover Enterprises",
+    "url": "https://github.com/notshekhar/LogoDesigns/tree/master/mooover",
+    "date": "Dec 14, 2018",
+    "type": "ld"
+  },{
+    "title": "Simple Pendulum",
+    "url": "https://github.com/notshekhar/simple-pendulum",
+    "date": "Dec 12, 2018",
+    "demo": "https://notshekhar.github.io/simple-pendulum/",
+    "type": "cc"
+  },{
+    "title": "PoseNet",
+    "url": "https://github.com/notshekhar/posenet",
+    "date": "Dec 09, 2018",
+    "demo": "https://notshekhar.github.io/posenet/",
+    "type": "ml"
+  },{
+    "title": "Chrome Extension Changes text of whole page to the text entered in extension",
+    "url": "https://github.com/notshekhar/changes-all-p-element-text-to-th-text-entered-in-extension",
+    "date": "Oct 29, 2018",
+    "demo": "https://chrome.google.com/webstore/detail/hcehngpcajmihnplidpjolngfmlcpomk/publish-review",
+    "type": "fed"
+  },{
+    "title": "Sticky Natigation Bar",
+    "url": "https://github.com/notshekhar/Sticky-Nav",
+    "date": "Oct 21, 2018",
+    "demo": "https://notshekhar.github.io/Sticky-Nav/",
+    "type": "cc"
+  },{
+    "title": "Video Speed Controller",
+    "url": "https://github.com/notshekhar/Video-Speed-Controller",
+    "date": "Oct 20, 2018",
+    "demo": "https://notshekhar.github.io/Video-Speed-Controller/",
+    "type": "cc"
+  },{
+    "title": "Yolo Detection using ml5js",
+    "url": "https://github.com/notshekhar/yolo-detection-using-ml5js",
+    "date": "Oct 10, 2018",
+    "demo": "https://notshekhar.github.io/yolo-detection-using-ml5js/",
+    "type": "ml"
+  },{
+    "title": "Text to Speech",
+    "url": "https://github.com/notshekhar/Text-to-Speech",
+    "date": "Oct 9, 2018",
+    "demo": "https://notshekhar.github.io/Text-to-Speech/",
+    "type": "cc"
+  },{
+    "title": "Color Predictor",
+    "url": "https://github.com/notshekhar/Color-Predictor",
+    "date": "Oct 8, 2018",
+    "demo": "https://notshekhar.github.io/Color-Predictor/",
+    "type": "ml"
+  },{
+    "title": "Redesigned my university's admission cell website ( Gautam Buddha University )",
+    "url": "https://github.com/notshekhar/gbu",
+    "date": "Sep 24, 2018",
+    "demo": "https://notshekhar.github.io/gbu/",
+    "type": "fed"
+  },{
+    "title": "LocalStorage and Event Delegation work",
+    "url": "https://github.com/notshekhar/LocalStorage-and-Event-Delegation-work",
+    "date": "Sep 8, 2018",
+    "demo": "https://notshekhar.github.io/LocalStorage-and-Event-Delegation-work/",
+    "type": "cc"
+  },{
+    "title": "Custom HTML5 Video Player",
+    "url": "https://github.com/notshekhar/VideoPlayer",
+    "date": "Sep 8, 2018",
+    "demo": "https://notshekhar.github.io/VideoPlayer/",
+    "type": "cc"
+  },{
+    "title": "Hold Shift and Check Checkboxes",
+    "url": "https://github.com/notshekhar/checkboxes",
+    "date": "Sep 8, 2018",
+    "demo": "https://notshekhar.github.io/checkboxes/",
+    "type": "cc"
+  },{
+    "title": "Fun with HTML5 Canvas",
+    "url": "https://github.com/notshekhar/Canvas-Drawing",
+    "date": "Sep 7, 2018",
+    "demo": "https://notshekhar.github.io/Canvas-Drawing/",
+    "type": "cc"
+  },{
+    "title": "Ajax Type Ahead with fetch()",
+    "url": "https://github.com/notshekhar/Ajax-Ahead",
+    "date": "Sep 6, 2018",
+    "demo": "https://notshekhar.github.io/Ajax-Ahead",
+    "type": "cc"
+  },{
+    "title": "Flexbox + JavaScript Image Gallery",
+    "url": "https://github.com/notshekhar/FlexBox-JavaScript-Image-gallery",
+    "date": "Sep 6, 2018",
+    "demo": "https://notshekhar.github.io/FlexBox-JavaScript-Image-gallery",
+    "type": "cc"
+  },{
+    "title": "Woah! CSS variables?! ( CSS variable updated by JavaScript )",
+    "url": "https://github.com/notshekhar/CSS-Variable",
+    "date": "Sep 3, 2018",
+    "demo": "https://notshekhar.github.io/CSS-Variable",
+    "type": "cc"
+  },{
+    "title": "JavaScript+CSS Clock",
+    "url": "https://github.com/notshekhar/clock",
+    "date": "Sep 3, 2018",
+    "demo": "https://notshekhar.github.io/clock",
+    "type": "cc"
+  },{
+    "title": "Drum Kit",
+    "url": "https://github.com/notshekhar/Drum-Kit",
+    "date": "Sep 2, 2018",
+    "demo": "https://notshekhar.github.io/Drum-Kit",
+    "type": "cc"
+  },{
+    "title": "Slasho { codebeat }",
+    "url": "https://github.com/notshekhar/LogoDesigns/tree/master/slasho",
+    "date": "Aug 29, 2018",
+    "type": "ld"
+  },{
+    "title": "Algorithms in JavaScript",
+    "url": "https://github.com/notshekhar/JavaScript-Algorithm",
+    "date": "Aug 21, 2018",
+    "type": "cc"
+  },{
+    "title": "Teachable Machine ( pattern detecton using neural network library written in javaScript )",
+    "url": "https://github.com/notshekhar/teachable-machine",
+    "date": "Aug 20, 2018",
+    "demo": "https://notshekhar.github.io/teachable-machine",
+    "type": "ml"
+  },{
+    "title": "Login and signup page using python flask and Javascript",
+    "url": "https://github.com/notshekhar/login-and-signup-page-using-python-flask",
+    "date": "Aug 15, 2018",
+    "type": "bed"
+  },{
+    "title": "Hand written digit Recognisor using neuralnet lib written in JavasScript",
+    "url": "https://github.com/notshekhar/flurr",
+    "date": "Jul 18, 2018",
+    "demo": "https://notshekhar.github.io/flurr/",
+    "type": "ml"
+  },{
+    "title": "Flurr Note ( PWA which allows to create notes )",
+    "url": "https://github.com/notshekhar/note",
+    "date": "Jul 5, 2018",
+    "demo": "https://notshekhar.github.io/note/",
+    "type": "fed"
+  },{
+    "title": "RNN text generate in JavaScript",
+    "url": "https://github.com/notshekhar/rnn_text_generate_js",
+    "date": "Jun 14, 2018",
+    "demo": "https://notshekhar.github.io/rnn_text_generate_js/",
+    "type": "ml"
+  },{
+    "title": "ml5js homepage demo",
+    "url": "https://github.com/notshekhar/ml5_homepage_demo",
+    "date": "Jun 8, 2018",
+    "demo": "https://notshekhar.github.io/ml5_homepage_demo/",
+    "type": "ml"
+  },{
+    "title": "animations_js ( animation using HTML, CSS, JavaScript )",
+    "url": "https://github.com/notshekhar/animations_js",
+    "date": "Jun 1, 2018",
+    "demo": "https://notshekhar.github.io/animations_js/bobo.htm",
+    "type": "fed"
+  },{
+    "title": "neuralnet ( multilayer neural network lib in JavaScript )",
+    "url": "https://github.com/notshekhar/neuralnet",
+    "date": "Apr 22, 2018",
+    "type": "ml"
+  },{
+    "title": "flur-web ( front end web design )",
+    "url": "https://github.com/notshekhar/flur-web",
+    "date": "Apr 8, 2018",
+    "demo": "https://notshekhar.github.io/flur-web/",
+    "type": "fed"
+  },{
+    "title": "Designed Banner of Office Bearers for School",
+    "url": "https://www.canva.com/design/DAC3sdZW-YA/8P6BzYvTHGrv9oigquh6mw/view?utm_content=DAC3sdZW-YA&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton",
+    "date": "May 30, 2018",
+    "type": "fed"
+  },{
+    "title": "Neural_Network",
+    "url": "https://github.com/notshekhar/Neural-Network",
+    "date": "Mar 9, 2018",
+    "type": "ml"
+  },{
+    "title": "word2vec-js",
+    "url": "https://github.com/notshekhar/word2vec-js",
+    "date": "Feb 26, 2018",
+    "demo": "https://notshekhar.github.io/word2vec-js/",
+    "type": "ml"
+  }]
+},{
+  "year": 2017,
+  "data": [{
+    "title": "For Tnsaino",
+    "url": "https://github.com/notshekhar/LogoDesigns/tree/master/tnsaino",
+    "date": "Dec 06, 2017",
+    "type": "ld"
+  },{
+    "title": "CSS Sprite Images",
+    "url": "https://www.github.com/notshekhar/notsurf",
+    "date": "Dec 12, 2017",
+    "demo": "https://notshekhar.github.io/notsurf",
+    "type": "fed"
+  },{
+    "title": "NotSurf",
+    "url": "https://www.github.com/notshekhar/LogoDesigns/tree/master/notsurf",
+    "date": "Dec 11, 2017",
+    "type": "ld"
+  },{
+    "title": "Just a Design",
+    "url": "https://www.github.com/notshekhar/school",
+    "date": "Jul 28, 2017",
+    "demo": "https://notshekhar.github.io/school",
+    "type": "fed"
+  },{
+    "title": "Javascript Web Editor ( Runs HTML,CSS,JS codes )",
+    "url": "https://www.github.com/besurf/edit",
+    "date": "Jul 5, 2017",
+    "demo": "https://besurf.github.io/edit",
+    "type": "cc"
+  },{
+    "title": "Calender Design",
+    "url": "https://www.canva.com/design/DACXIwo2tqE/tzNrw0Hnh6u4vOIYOCb4sQ/view?utm_content=DACXIwo2tqE&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton",
+    "date": "Jun 23, 2017",
+    "type": "fed"
+  },{
+    "title": "Flask Web Application",
+    "url": "https://github.com/notshekhar/flaspy",
+    "date": "Jun 4, 2017",
+    "type": "bed"
+  },{
+    "title": "First every CSS page design I've designed",
+    "url": "https://www.github.com/notshekhar/answer",
+    "date": "Mar 30, 2017",
+    "demo": "https://notshekhar.github.io/answer",
+    "type": "fed"
+  },{
+    "title": "Designed Banner of Office Bearers for School",
+    "url": "https://www.canva.com/design/DACUDnoIUUE/bIL0Xf_Vr5KBjxN0KgiURw/view?utm_content=DACUDnoIUUE&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton",
+    "date": "May 27, 2017",
+    "type": "fed"
+  }]
+}]
