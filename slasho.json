@@ -1,4 +1,13 @@
 [{
+  "year": 2019,
+  "data":[{
+    "title": "StickMan RUn Game created using JavaScript",
+    "url": "https://github.com/notshekhar/stickmanRun",
+    "date": "Jan 1, 2019",
+    "demo": "https://notshekhar.github.io/stickmanRun/",
+    "type": "cc"
+  }]
+},{
   "year":2018,
   "data":[{
     "title": "StickMan RUn Game created using JavaScript",
