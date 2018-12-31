@@ -10,6 +10,11 @@
 },{
   "year":2018,
   "data":[{
+    "title": "A personal logo for my new React Native Application",
+    "url": "https://github.com/notshekhar/LogoDesigns/Flurr%20Note/",
+    "date": "Dec 31, 2018",
+    "type": "ld"
+  },{
     "title": "StickMan RUn Game created using JavaScript",
     "url": "https://github.com/notshekhar/stickmanRun",
     "date": "Dec 31, 2018",
