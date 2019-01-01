@@ -1,11 +1,10 @@
 [{
   "year": 2019,
   "data":[{
-    "title": "StickMan RUn Game created using JavaScript",
-    "url": "https://github.com/notshekhar/stickmanRun",
+    "title": "Android Aplication (Flurr Note) using ReactNative and Expo",
+    "url": "https://play.google.com/store/apps/details?id=com.flurr.notes",
     "date": "Jan 1, 2019",
-    "demo": "https://notshekhar.github.io/stickmanRun/",
-    "type": "cc"
+    "type": "fed"
   }]
 },{
   "year":2018,
