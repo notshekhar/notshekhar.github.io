@@ -2,9 +2,10 @@
   "year": 2019,
   "data":[{
     "title": "Android Aplication (Flurr Note) using ReactNative and Expo",
-    "url": "https://play.google.com/store/apps/details?id=com.flurr.notes",
+    "url": "https://snack.expo.io/@notshekhar/notes",
     "date": "Jan 1, 2019",
-    "type": "fed"
+    "type": "fed",
+    "demo": "https://play.google.com/store/apps/details?id=com.flurr.notes"
   }]
 },{
   "year":2018,
