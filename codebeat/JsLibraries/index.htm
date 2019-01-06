@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Create JavaScript Library</title>
+  <link rel="stylesheet" href="http://127.0.0.1:1906/slasho/codebeat/index.css">
+</head>
+<body>
+  <div class="tab">
+    <div class="a" data-url="http://127.0.0.1:1906/slasho/codebeat/">About the course</div>
+    <div class="a" data-url="http://127.0.0.1:1906/slasho/codebeat/JsLibraries">JavaScript Libraries</div>
+    <div class="a" data-url="http://127.0.0.1:1906/slasho/codebeat/chromeExtension">Chrome Extension</div>
+  </div>
+  <div class="body">
+    <header></header>
+    <div class="title">Create JavaScript Library</div>
+    <hr>
+    <br><br>
+    <h3>Immediately-Invoked Function Expression</h3>
+    <p>
+      IIFE is a anonymous function which invokes itself. Creating modules using IIFE is the oldest way of creating JavaScript modules. Here is example code on how to create modules using IIFE
+    </p>
+    <p>
+      You can place the below code in an separate file to make it an distributable module or place it directly in your main program for your own use.
+    </p>
+    <pre>
+    <code>
+
+      /Module Starts
+
+      (function(window){
+
+        var sum = function(x, y){
+          return x + y;
+        }
+
+        var sub = function(x, y){
+          return x - y;
+        }
+
+        var math = {
+          findSum: function(a, b){
+            return sum(a,b);
+          },
+
+          findSub: function(a, b){
+            return sub(a, b);
+          }
+        }
+
+        window.math = math;
+
+      })(window);
+
+      //Module Ends
+
+
+      console.log(math.findSum(1, 2)); //3
+      console.log(math.findSub(1, 2)); //-1
+    </code></pre>
+    <p>
+      Here sum and sub function objects remain in memory but there is no way the program which uses the module can access them therefore we prevented any chances of overriding global variables. The only thing thats available global is math object which exposes all the functionality of the module by hiding their implementation.
+
+      jQuery library is a IIFE module. The only object that it exposes is $ or jQuery.
+    </p>
+    <h3>CommonJS</h3>
+    <p>
+      CommonJS is a non-browser JavaScript specification for creating modules. CommonJS is not available for browser JavaScript. Its mostly used in NodeJS.
+
+      Suppose we have two files “main.js” and “math.js”. Let me show you how to make “math.js” behave like an module and then use the module in “main.js” file.
+
+      Here is the code in “math.js” file
+    </p>
+    <pre><code>
+      var sum = function(x, y){
+        return x + y;
+      }
+
+      var sub = function(x, y){
+        return x - y;
+      }
+
+      var math = {
+        findSum: function(a, b){
+          return sum(a,b);
+        },
+
+        findSub: function(a, b){
+          return sub(a, b);
+        }
+      }
+
+      //All the variable we want to expose outside needs to be property of "exports" object.
+      exports.math = math;
+    </code></pre>
+    Here is the code in “main.js” file
+    <pre><code>
+      //no file extension required
+      var math = require("./math").math;
+      console.log(math.findSum(1, 2)); //3
+      console.log(math.findSub(1, 2)); //-1
+    </code></pre>
+    <p>
+      Here we successfully prevented any chances of overriding global variables and also hide the implementation.
+    </p>
+    <p>
+      There are some hacky implementations for making CommonJS specification work on browser but there are lots of performance issues with it. One such implementation is &nbsp;<a href="http://browserify.org/" target="blank">Browserify.</a>
+    </p>
+    <h3>Asynchronous module Definition</h3>
+    <p>
+      AMD is a JavaScript browser specification for creating modules. AMD is designed keeping browser limitations in mind. Browsers don’t natively support AMD so you need a AMD implementation library for creating and importing AMD modules. One such AMD library is &nbsp;<a href="https://requirejs.org/" target="blank">RequireJS</a>.
+    </p>
+    <p>
+      Let’s see example code on how to use RequireJS for creating and importing a module. Let’s take an scenario that we have an “index.js” file which has all of our website’s JS code and we want to create a module named “math” which will expose mathematical APIs. Here’s how to create “math” module and import it in “index.js” file
+    </p>
+    <p>
+      Here is code for “index.html” which is our webpage
+    </p>
+    <pre><code>
+      <!doctype html>
+      <html>
+      <head></head>
+      <body>
+
+        <!-- Load RequireJS library and then provide relative path to our website's JS file. File extension not required. -->
+        <script type="text/javascript" src="http://requirejs.org/docs/release/2.1.16/minified/require.js" data-main="index"></script>
+      </body>
+      </html>
+    </code></pre>
+    <p>
+      Provide relative url of the “index.js” file in the data-main attribute.
+    </p>
+    <p>
+      Here is the code in “index.js” file
+    </p>
+    <pre><code>
+      //list of modules required
+      require(["math"], function(math){
+
+        //main program
+        console.log(math.findSum(1, 2)); //3
+        console.log(math.findSub(1, 2)); //-1
+      })
+    </code></pre>
+    <p>
+      Here we are asking RequireJS to load math module before the main program.
+    </p>
+    <p>
+      Here is the code in “math.js” file
+    </p>
+    <pre><code>
+      define(function(){
+
+        var sum = function(x, y){
+          return x + y;
+        }
+
+        var sub = function(x, y){
+          return x - y;
+        }
+
+        var math = {
+          findSum: function(a, b){
+            return sum(a,b);
+          },
+
+          findSub: function(a, b){
+            return sub(a, b);
+          }
+        }
+
+        return math;
+      });
+    </code></pre>
+    <p>
+      This is how you need to create a module. Now any website using RequireJS can import “math.js” module file.
+    </p>
+    <p>
+      Here we successfully prevented any chances of overriding global variables in main program and also hidden the module functionality implementation.
+    </p>
+    <h3>Universal Module Definition</h3>
+    <p>
+      <a href="https://github.com/umdjs/umd">UMD</a> is a set of techniques to create modules that can be imported using CommonJS, AMD or as IIFE.
+    </p>
+    <p>
+      UMD modules are called Universal Modules. There are many techniques under UMD. Its upto you to choose whichever you want to use for creating modules.
+    </p>
+    <p>
+      My favourite UMD technique is returnExports.
+    </p>
+    <p>
+      Here is example code on how to create math module using returnExport pattern. Place this code in “math.js” file
+    </p>
+    <pre><code>
+      // if the module has no dependencies, the above pattern can be simplified to
+      (function (root, factory) {
+
+        //Environment Detection
+
+        if (typeof define === 'function' && define.amd) {
+          //AMD
+          define([], factory);
+        } else if (typeof exports === 'object') {
+          //CommonJS
+          module.exports = factory();
+        } else {
+          // Script tag import i.e., IIFE
+          root.returnExports = factory();
+        }
+      }(this, function () {
+
+        //Module Defination
+
+        var sum = function(x, y){
+          return x + y;
+        }
+
+        var sub = function(x, y){
+          return x - y;
+        }
+
+        var math = {
+          findSum: function(a, b){
+            return sum(a,b);
+          },
+
+          findSub: function(a, b){
+            return sub(a, b);
+          }
+        }
+
+        return math;
+      }));
+    </code></pre>
+    <p>
+      Import module “math.js” any way you wish to i.e., CommonJS, RequireJS or as IIFE and it will be successfully imported.
+    </p>
+    <p>
+      UMD doesn’t provide techniques for importing modules its just for creating modules.
+    </p>
+    <h3>ECMAScript 6 Modules</h3>
+    <p>
+      Due to the huge usage of JavaScript modules it was time for browsers and server side runtime engines to natively support some form of common module system. Therefore ES6 modules were introduced. ES6 modules are supported everywhere.
+    </p>
+    <p>
+      In ES6 every module is represented by a file. Here is how to make “math.js” file as a math module
+    </p>
+    <pre><code>
+      export class Math {
+
+        constructor()
+        {
+          this.sum = function(x, y){
+            return x + y;
+          }
+
+          this.sub = function(x, y){
+            return x - y;
+          }
+        }
+
+        findSum(a, b)
+        {
+          return this.sum(a, b);
+        }
+
+        findSub(a, b)
+        {
+          return this.sub(a, b);
+        }
+      }
+    </code></pre>
+    <p>
+      Here is how import math module in out main program
+    </p>
+    <pre><code>
+      import {Math} from 'math';
+
+      var math = new Math();
+
+      console.log(math.findSum(1, 2)); //3
+      console.log(math.findSub(1, 2)); //-1
+    </code></pre>
+    <p>
+      There are lots of more advanced functionality supported by ES6 modules.
+    </p>
+
+    <!-- page end -->
+    <br><br><br>
+    <footer>Source code for this website can be found on&nbsp;<a class="click" href="https://notshekhar.github.io/codebeat">Github.</a></footer>
+    <h3>Notes</h3>
+  </div>
+  <script src="http://127.0.0.1:1906/slasho/codebeat/index.js" charset="utf-8"></script>
+</body>
+</html>
