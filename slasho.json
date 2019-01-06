@@ -1,11 +1,23 @@
 [{
   "year": 2019,
   "data":[{
+    "title": "JavaScript Library which handels cookies",
+    "url": "https://github.com/notshekhar/cookies/",
+    "date": "Jan 6, 2019",
+    "demo": "https://notshekhar.github.io/cookies/demo",
+    "type": "cc"
+  },{
+    "title": "Tetris Game in Canvas HTML5",
+    "url": "https://github.com/notshekhar/tetris/",
+    "date": "Jan 3, 2019",
+    "demo": "https://notshekhar.github.io/tetris",
+    "type": "cc"
+  },{
     "title": "Android Aplication (Flurr Note) using ReactNative and Expo",
     "url": "https://snack.expo.io/@notshekhar/notes",
     "date": "Jan 1, 2019",
-    "type": "fed",
-    "demo": "https://play.google.com/store/apps/details?id=com.flurr.notes"
+    "demo": "https://play.google.com/store/apps/details?id=com.flurr.notes",
+    "type": "fed"
   }]
 },{
   "year":2018,
