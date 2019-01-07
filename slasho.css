@@ -441,11 +441,13 @@ p{
   }
   #code{
     position: absolute;
-    top: calc(100%);
     left: 0px;
+    top: calc(100%);
     width: 100%;
     height: auto;
+    opacity: 1;
     overflow: visible;
+    animation: none;
   }
   .about{
     position: absolute;
