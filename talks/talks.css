@@ -16,6 +16,13 @@
 }
 body{
   font-family: slasho;
+  opacity: 0;
+  animation: bla 3s forwards;
+}
+@keyframes bla {
+  100%{
+    opacity: 1;
+  }
 }
 .title{
   position: relative;
