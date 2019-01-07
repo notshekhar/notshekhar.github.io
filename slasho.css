@@ -125,9 +125,7 @@ body{
   background: #7BE4D5;
   z-index: 1;
   opacity: 0.8;
-  animation-name: flafla;
-  animation-duration: 500ms;
-  animation-fill-mode: forwards;
+  animation: flafla 500ms forwards;
 }
 @keyframes flafla {
   100%{
@@ -147,9 +145,7 @@ body{
   border-image: linear-gradient(to bottom, white 15%, #9d9d9d 75%, white 100%);
   border-image-slice: 1;
   border-width: 0 1px 0 0;
-  animation-name: alala;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
+  animation: alala 1s forwards;
 }
 @keyframes alala {
   0%{
@@ -227,9 +223,7 @@ body{
   overflow-y: scroll;
   overflow-x: hidden;
   display: none;
-  animation-name: blabla;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
+  animation: blabla 1s forwards;
 }
 @keyframes blabla {
   0%{
@@ -254,7 +248,16 @@ body{
 .aboutme{
   position: absolute;
   margin-left: 20px;
-  width: calc(100% - 40px)
+  width: calc(100% - 40px);
+  top: 100%;
+  opacity: 0;
+  animation: mana 1s forwards;
+}
+@keyframes mana {
+  100%{
+    top: 70px;
+    opacity: 1;
+  }
 }
 .talks{
   position: fixed;
@@ -416,7 +419,16 @@ p{
 .talkbody{
   position: absolute;
   left: 10px;
-  width: calc(100% - 10px)
+  width: calc(100% - 10px);
+  top: 100%;
+  opacity: 0;
+  animation: saga 1s forwards;
+}
+@keyframes saga {
+  100%{
+    opacity: 1;
+    top: 70px;
+  }
 }
 
 @media (max-width: 700px) {
