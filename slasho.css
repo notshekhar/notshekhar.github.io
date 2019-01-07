@@ -16,10 +16,19 @@
 }
 body{
   font-family: slasho;
+  display: none;
 }
 #total{
   color: blue;
-  margin-left: 10px;
+  margin-left: 1000px;
+  opacity: 0;
+  animation: vlavla 1s forwards;
+}
+@keyframes vlavla {
+  100%{
+    margin-left: 10px;
+    opacity: 1;
+  }
 }
 .spinner{
   display: block;
@@ -44,7 +53,7 @@ body{
 }
 .title{
   position: relative;
-  margin-top: 20px;
+  margin-top: -20px;
   font-size: 40px;
   font-weight: 600px;
   font-family: log;
@@ -55,17 +64,33 @@ body{
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+  animation: klakla 1.2s forwards;
+  opacity: 0;
+}
+@keyframes klakla {
+  100%{
+    opacity: 1;
+    margin-top: 20px;
+  }
 }
 .tabs{
   margin-top: 30px;
   margin-left: 1px;
   position: relative;
   width: 100%;
-  min-height: 60px;
+  height: 0px;
   display: flex;
   background: white;
   border: none;
+  opacity: 0;
   z-index: 3;
+  animation: glagla 1s forwards;
+}
+@keyframes glagla {
+  100%{
+    height: 60px;
+    opacity: 1;
+  }
 }
 .tab{
   flex: 1;
@@ -92,7 +117,7 @@ body{
   border-bottom-width: 4px;
 }
 #header{
-  top: 0px;
+  top: -8px;
   left: 0px;
   height: 8px;
   width: 100%;
@@ -100,11 +125,20 @@ body{
   background: #7BE4D5;
   z-index: 1;
   opacity: 0.8;
+  animation-name: flafla;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+@keyframes flafla {
+  100%{
+    top: 0px;
+  }
 }
 #profile{
   position: fixed;
   top: 0px;
-  left: 0px;
+  left: -300px;
+  opacity: 0;
   width: 300px;
   height: 100%;
   min-height: 500px;
@@ -113,6 +147,19 @@ body{
   border-image: linear-gradient(to bottom, white 15%, #9d9d9d 75%, white 100%);
   border-image-slice: 1;
   border-width: 0 1px 0 0;
+  animation-name: alala;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes alala {
+  0%{
+    opacity: 0;
+    left: -300px;
+  }
+  100%{
+    opacity: 1;
+    left: 0px;
+  }
 }
 .topTabs{
   position: relative;
@@ -122,6 +169,7 @@ body{
   flex-direction: column;
   height: 130px;
 }
+
 .toptab{
   background: white;
   flex:1;
@@ -170,13 +218,28 @@ body{
 }
 #code{
   position: fixed;
-  left: 300px;
+  left: 100%;
+  opacity: 0;
   top: 0px;
   height: 100%;
   right: 0px;
+  width: calc(100% - 300px);
   overflow-y: scroll;
   overflow-x: hidden;
   display: none;
+  animation-name: blabla;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes blabla {
+  0%{
+    opacity: 0;
+    left: 100%;
+  }
+  100%{
+    opacity: 1;
+    left: 300px;
+  }
 }
 .about{
   position: fixed;
@@ -228,8 +291,16 @@ body{
 #projects{
   position: absolute;
   width: calc(100% - 10px);
-  margin-top: 20px;
+  margin-top: 100%;
   margin-left: 10px;
+  opacity: 0;
+  animation: slasla 1.2s forwards;
+}
+@keyframes slasla {
+  100%{
+    opacity: 1;
+    margin-top: 20px;
+  }
 }
 .year{
   position: absolute;
@@ -305,6 +376,13 @@ a{
   display: flex;
   justify-content: center;
   flex-direction: column;
+  opacity: 0;
+  animation: xlaxla 4s forwards;
+}
+@keyframes xlaxla {
+  100%{
+    opacity: 1;
+  }
 }
 .f{
   flex: 1;
@@ -318,8 +396,6 @@ a{
 }
 p{
   font-family: mono;
-  letter-spacing: 3px;
-  word-spacing: 10px;
   font-size: 20px;
 }
 .y{
