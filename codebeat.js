@@ -1,17 +1,16 @@
 (function(){
   let notes = [
-    {url: 'https://notshekhar.github.io/codebeat/', title: 'About the Course'},
-    {url: 'https://notshekhar.github.io/codebeat/JsLibraries', title: 'JavaScript Library'},
-    {url: 'https://notshekhar.github.io/codebeat/chromeExtension', title: 'Chrome Extension'}
+    {url: '/codebeat/', title: 'About the Course'},
+    {url: '/codebeat/JsLibraries', title: 'JavaScript Library'},
+    {url: '/codebeat/chromeExtension', title: 'Chrome Extension'}
   ];
 
   let tab = document.querySelector('.tab')
   let body = document.querySelector('.body')
-  let arr = []
-  let tabs = notes.map(note => `<div class="a" data-url="${note.url}">${note.title}</div>`).join('')
-  tab.innerHTML = tabs
-  let html = arr.map(tab => `<li class="note" data-url='${tab.dataset.url}'>${tab.innerText}</li>`).join('')
-  body.innerHTML += html
+
+  let html = notes.map(note => `<div class="a" data-url="${note.url}">${note.title}</div>`).join('')
+  tab.innerHTML = html
+
   document.onclick = e => {
     let element = e.srcElement
     if(element.dataset.url){

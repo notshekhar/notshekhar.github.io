@@ -1,0 +1,142 @@
+body::-webkit-scrollbar {
+  width: 0px;
+}
+.tab{
+  position: fixed;
+  top: 0px;
+  right: -350px;
+  background: blue;
+  opacity: 0;
+  width: 350px;
+  height: 100%;
+  animation-name: blabla;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  padding: 20px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  z-index: 1;
+  overflow-y: scroll;
+}
+.tab::-webkit-scrollbar {
+  width: 0px;
+}
+.body{
+  position: absolute;
+  left: -100px;
+  top: 0px;
+  opacity: 0;
+  width: calc(100% - 510px);
+  height: 100%;
+  animation-name: alala;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  padding: 80px;
+
+}
+p{
+    font-size: 21px;
+}
+@keyframes blabla {
+  0%{
+    right: -350px;
+    opacity: 0;
+  }
+  100%{
+    right: 0px;
+    opacity: 1;
+  }
+}
+@keyframes alala {
+  0%{
+    opacity: 0;
+    left: -100px;
+  }
+  100%{
+    opacity: 1;
+    left: 0px;
+  }
+}
+.a{
+  margin-top: 10px;
+  position: relative;
+  padding: 10px;
+  padding-left: 20px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  background: rgba(0, 0, 0, 0.4);
+  margin-bottom: 10px;
+  color: white;
+  font-size: 13px;
+  border-radius: 200px;
+  outline: none;
+
+}
+.a:hover{
+  color: blue;
+  background: white;
+}
+.title{
+  font-family: serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+hr{
+  position: relative;
+  margin-left: 0px;
+  border-radius: 100px;
+  width: 50px;
+  height: 5px;
+  background: blue;
+}
+h3{
+  font-family: sans-serif;
+}
+.note{
+  font-family: serif;
+  text-decoration: none;
+  color: #EE0058;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.note:hover{
+  text-decoration: underline;
+}
+footer{
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 40px;
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+}
+.click{
+  color: black;
+  text-decoration: none;
+}
+.click:hover{
+  text-decoration: underline;
+}
+pre{
+  background: rgba(12, 0, 12, 0.2);
+  border-radius: 10px;
+  overflow-x: scroll;
+}
+pre::-webkit-scrollbar {
+  width: 0px;
+}
+.keyword{
+  color: blue;
+}
+.text{
+  color: grey;
+}

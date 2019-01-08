@@ -16,6 +16,8 @@
 }
 body{
   font-family: slasho;
+}
+.bod{
   display: none;
 }
 #total{

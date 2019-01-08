@@ -34,7 +34,7 @@ let r = new XMLHttpRequest()
 r.open("GET", "slasho.json")
 r.onloadend = () =>{
   spinner.style.display = 'none'
-  document.querySelector('body').style.display = 'block'
+  document.querySelector('.bod').style.display = 'block'
   data = r.responseText
   data = JSON.parse(data)
   //
