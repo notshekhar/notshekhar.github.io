@@ -572,7 +572,7 @@ if(window.name == 'projects'){
 	history.pushState({ title: "Hiya! I'm Shekhar", page: 'about'}, "about", 'about')
 	toptabs.forEach(t=>{
 		t.classList.remove('h')
-	})
+	})\
 	document.title = "Hiya! I'm Shekhar"
 	code.style.display = 'none'
 	about.style.display = 'block'
