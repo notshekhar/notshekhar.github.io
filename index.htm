@@ -11,9 +11,6 @@
   <title>slasho { codebeat }</title>
   <script src="analystic.js" charset="utf-8"></script>
   <script type="text/javascript">
-    navigator.serviceWorker.register('sw.js').then(()=>{
-      console.log('service worker regestered')
-    })
     if (window.top !== window.self){
       window.self.location.replace(window.top.location.href+window.self.location.href)
     }
