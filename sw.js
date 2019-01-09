@@ -24,7 +24,9 @@ const files = [
   'slso512.png',
   'spin.gif',
   'talks.json',
-  'twit.png'
+  'twit.png',
+  'talks/hello-tensorflow.htm',
+  'talks/talks.css'
 ]
 
 addEventListener('install', (event) => {
