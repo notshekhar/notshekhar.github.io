@@ -226,6 +226,7 @@ window.onscroll = () => {
 	if(window.innerWidth<700){
 		if(y>=15+window.innerHeight+tabHolder.offsetHeight){
 			tabHolder.style.position = 'fixed'
+			tabHolder.style.background = 'white'
 			tabHolder.style.top = '0px'
 			tabHolder.style.left = '0px'
 			tabHolder.style.marginTop = '8px'
@@ -233,6 +234,7 @@ window.onscroll = () => {
 			spacer.style.height = `${38+tabHolder.getBoundingClientRect().height}px`
 		}else{
 			tabHolder.style.position = 'relative'
+			tabHolder.style.background = 'rgba(0,0,0,0)'
 			tabHolder.style.top = 'auto'
 			tabHolder.style.left = 'auto'
 			tabHolder.style.marginTop = '30px'
@@ -245,6 +247,7 @@ code.onscroll = () => {
 	let y = code.scrollTop
 	if(y>=tabHolder.offsetHeight){
 		tabHolder.style.position = 'fixed'
+		tabHolder.style.background = 'white'
 		tabHolder.style.top = '0px'
 		tabHolder.style.left = `${profile.getBoundingClientRect().width}px`
 		tabHolder.style.marginTop = '8px'
@@ -253,6 +256,7 @@ code.onscroll = () => {
 		spacer.style.height = `${20+tabHolder.getBoundingClientRect().height}px`
 	}else{
 		tabHolder.style.position = 'relative'
+		tabHolder.style.background = 'rgba(0,0,0,0)'
 		tabHolder.style.top = 'auto'
 		tabHolder.style.left = 'auto'
 		tabHolder.style.marginTop = '30px'
