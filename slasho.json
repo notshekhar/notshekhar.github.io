@@ -2,6 +2,13 @@
   "year": 2019,
   "data":[
     {
+      "title": "Colliding Blocks simulation in space using HTML, CSS, and JavaScript",
+      "url": "https://github.com/notshekhar/collidingBlocks",
+      "date": "Jan 24, 2019",
+      "demo": "https://notshekhar.github.io/collidingBlocks/",
+      "type": "cc"
+    },
+    {
       "title": "Ripple Button using HTML, CSS, and JavaScript",
       "url": "https://github.com/notshekhar/rippleButton",
       "date": "Jan 10, 2019",
