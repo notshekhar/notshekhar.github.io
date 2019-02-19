@@ -1,135 +1,74 @@
 [{
   "year": 2019,
-  "data": [{
-    "title": "Visualisation of Heart Curve's Mathematical Equation using JavaScript and HTML5",
-    "url": "https://github.com/notshekhar/Heart-Curve",
-    "date": "Feb 19, 2019",
-    "demo": "https://notshekhar.github.io/Heart-Curve",
-    "type": "cc"
-  },
-  {
-    "title": "Bubble Sort Visualisation using JavaScript and HTML5",
-    "url": "https://github.com/notshekhar/LogoDesigns/tree/master/bubbleSortVisualisation",
-    "date": "Feb 05, 2019",
-    "demo": "https://notshekhar.github.io/bubbleSortVisualisation",
-    "type": "cc"
-  },
-  {
-    "title": "WebSite with SignUp/SignIn option using facebook graph api and expressjs server and mysql for data management",
-    "url": "https://github.com/notshekhar/LogoDesigns/tree/master/PlanetArcadia",
-    "date": "Feb 01, 2019",
-    "type": "bed"
-  },
-  {
-    "title": "Planet Arcadia (Fun and Game)",
-    "url": "https://github.com/notshekhar/LogoDesigns/tree/master/planet%20arcadia",
-    "date": "Jan 31, 2019",
-    "type": "ld"
-  },
-  {
-    "title": "Colliding Blocks simulation in space using HTML, CSS, and JavaScript",
-    "url": "https://github.com/notshekhar/collidingBlocks",
-    "date": "Jan 24, 2019",
-    "demo": "https://notshekhar.github.io/collidingBlocks/",
-    "type": "cc"
-  },
-  {
-    "title": "Ripple Button using HTML, CSS, and JavaScript",
-    "url": "https://github.com/notshekhar/rippleButton",
-    "date": "Jan 10, 2019",
-    "demo": "https://notshekhar.github.io/rippleButton/",
-    "type": "fed"
-  },
-  {
-    "title": "JavaScript Library which deals with HTML Dom and ajax",
-    "url": "https://github.com/notshekhar/JavaScript-libraries/tree/master/slasho",
-    "date": "Jan 6, 2019",
-    "type": "cc"
-  },
-  {
-    "title": "JavaScript Library which handels cookies",
-    "url": "https://github.com/notshekhar/cookies/",
-    "date": "Jan 6, 2019",
-    "demo": "https://notshekhar.github.io/cookies/demo",
-    "type": "cc"
-  },
-  {
-    "title": "Tetris Game in Canvas HTML5",
-    "url": "https://github.com/notshekhar/tetris/",
-    "date": "Jan 3, 2019",
-    "demo": "https://notshekhar.github.io/tetris",
-    "type": "cc"
-  },
-  {
-    "title": "Android Aplication (Flurr Note) using ReactNative and Expo",
-    "url": "https://snack.expo.io/@notshekhar/notes",
-    "date": "Jan 1, 2019",
-    "demo": "https://play.google.com/store/apps/details?id=com.flurr.notes",
-    "type": "fed"
-  }
-],
-"data":[
-  {
-    "title": "Bubble Sort Visualisation using JavaScript and HTML5",
-    "url": "https://github.com/notshekhar/LogoDesigns/tree/master/bubbleSortVisualisation",
-    "date": "Feb 05, 2019",
-    "demo": "https://notshekhar.github.io/bubbleSortVisualisation",
-    "type": "cc"
-  },
-  {
-    "title": "WebSite with SignUp/SignIn option using facebook graph api and expressjs server and mysql for data management",
-    "url": "https://github.com/notshekhar/LogoDesigns/tree/master/PlanetArcadia",
-    "date": "Feb 01, 2019",
-    "type": "bed"
-  },
-  {
-    "title": "Planet Arcadia (Fun and Game)",
-    "url": "https://github.com/notshekhar/LogoDesigns/tree/master/planet%20arcadia",
-    "date": "Jan 31, 2019",
-    "type": "ld"
-  },
-  {
-    "title": "Colliding Blocks simulation in space using HTML, CSS, and JavaScript",
-    "url": "https://github.com/notshekhar/collidingBlocks",
-    "date": "Jan 24, 2019",
-    "demo": "https://notshekhar.github.io/collidingBlocks/",
-    "type": "cc"
-  },
-  {
-    "title": "Ripple Button using HTML, CSS, and JavaScript",
-    "url": "https://github.com/notshekhar/rippleButton",
-    "date": "Jan 10, 2019",
-    "demo": "https://notshekhar.github.io/rippleButton/",
-    "type": "fed"
-  },
-  {
-    "title": "JavaScript Library which deals with HTML Dom and ajax",
-    "url": "https://github.com/notshekhar/JavaScript-libraries/tree/master/slasho",
-    "date": "Jan 6, 2019",
-    "type": "cc"
-  },
-  {
-    "title": "JavaScript Library which handels cookies",
-    "url": "https://github.com/notshekhar/cookies/",
-    "date": "Jan 6, 2019",
-    "demo": "https://notshekhar.github.io/cookies/demo",
-    "type": "cc"
-  },
-  {
-    "title": "Tetris Game in Canvas HTML5",
-    "url": "https://github.com/notshekhar/tetris/",
-    "date": "Jan 3, 2019",
-    "demo": "https://notshekhar.github.io/tetris",
-    "type": "cc"
-  },
-  {
-    "title": "Android Aplication (Flurr Note) using ReactNative and Expo",
-    "url": "https://snack.expo.io/@notshekhar/notes",
-    "date": "Jan 1, 2019",
-    "demo": "https://play.google.com/store/apps/details?id=com.flurr.notes",
-    "type": "fed"
-  }
-]
+  "data":[
+    {
+      "title": "Visualisation of Heart Curve's Mathematical Equation using JavaScript and HTML5",
+      "url": "https://github.com/notshekhar/Heart-Curve",
+      "date": "Feb 19, 2019",
+      "demo": "https://notshekhar.github.io/Heart-Curve",
+      "type": "cc"
+    },
+    {
+      "title": "Bubble Sort Visualisation using JavaScript and HTML5",
+      "url": "https://github.com/notshekhar/LogoDesigns/tree/master/bubbleSortVisualisation",
+      "date": "Feb 05, 2019",
+      "demo": "https://notshekhar.github.io/bubbleSortVisualisation",
+      "type": "cc"
+    },
+    {
+      "title": "WebSite with SignUp/SignIn option using facebook graph api and expressjs server and mysql for data management",
+      "url": "https://github.com/notshekhar/LogoDesigns/tree/master/PlanetArcadia",
+      "date": "Feb 01, 2019",
+      "type": "bed"
+    },
+    {
+      "title": "Planet Arcadia (Fun and Game)",
+      "url": "https://github.com/notshekhar/LogoDesigns/tree/master/planet%20arcadia",
+      "date": "Jan 31, 2019",
+      "type": "ld"
+    },
+    {
+      "title": "Colliding Blocks simulation in space using HTML, CSS, and JavaScript",
+      "url": "https://github.com/notshekhar/collidingBlocks",
+      "date": "Jan 24, 2019",
+      "demo": "https://notshekhar.github.io/collidingBlocks/",
+      "type": "cc"
+    },
+    {
+      "title": "Ripple Button using HTML, CSS, and JavaScript",
+      "url": "https://github.com/notshekhar/rippleButton",
+      "date": "Jan 10, 2019",
+      "demo": "https://notshekhar.github.io/rippleButton/",
+      "type": "fed"
+    },
+    {
+      "title": "JavaScript Library which deals with HTML Dom and ajax",
+      "url": "https://github.com/notshekhar/JavaScript-libraries/tree/master/slasho",
+      "date": "Jan 6, 2019",
+      "type": "cc"
+    },
+    {
+      "title": "JavaScript Library which handels cookies",
+      "url": "https://github.com/notshekhar/cookies/",
+      "date": "Jan 6, 2019",
+      "demo": "https://notshekhar.github.io/cookies/demo",
+      "type": "cc"
+    },
+    {
+      "title": "Tetris Game in Canvas HTML5",
+      "url": "https://github.com/notshekhar/tetris/",
+      "date": "Jan 3, 2019",
+      "demo": "https://notshekhar.github.io/tetris",
+      "type": "cc"
+    },
+    {
+      "title": "Android Aplication (Flurr Note) using ReactNative and Expo",
+      "url": "https://snack.expo.io/@notshekhar/notes",
+      "date": "Jan 1, 2019",
+      "demo": "https://play.google.com/store/apps/details?id=com.flurr.notes",
+      "type": "fed"
+    }
+  ]
 },
 {
   "year": 2018,
