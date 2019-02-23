@@ -375,8 +375,7 @@ a:hover{
 .date{
   flex: 1;
   font-weight: 400px;
-  font-
-  size: 2px;
+  font-size: 2px;
 }
 
 a{
@@ -388,8 +387,8 @@ a{
   top: 200px;
   display: flex;
   left: 50%;
-  width: 100px;
-  margin-left: -50px;
+  width: 200px;
+  margin-left: -100px;
 }
 .fol{
   width: 20px;
