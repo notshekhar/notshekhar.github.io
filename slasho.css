@@ -21,6 +21,28 @@ body{
 .bod{
   display: none;
 }
+.projectperyear{
+  position: absolute;
+  left: 80px;
+  width: 200px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: inline-block;
+  /* font-size: 20px; */
+  height: 20px;
+  color: white;
+  background: black;
+  border-radius: 4px;
+  display: none;
+}
+.project::before{
+  content: '';
+
+}
+.year:hover + .projectperyear{
+  display: block;
+}
 #total{
   color: blue;
   margin-left: 1000px;
@@ -353,8 +375,10 @@ a:hover{
 .date{
   flex: 1;
   font-weight: 400px;
-  font size: 2px;
+  font-
+  size: 2px;
 }
+
 a{
   text-decoration: none;
   color: black;
