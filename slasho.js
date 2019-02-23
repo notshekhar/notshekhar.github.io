@@ -10,7 +10,7 @@ let toptabs = document.querySelectorAll('.toptab')
 let about = document.querySelector('.about')
 let talks = document.querySelector('.talks')
 let talkbody = document.querySelector('.talkbody')
-let data;
+let data
 let talkdata
 let highlight = 0
 let totalProjects = 0
@@ -24,32 +24,22 @@ history.pushState({ title: 'slasho { codebeat }', page: 'home'}, "home", './')
 
 
 code.style.display = 'block'
-let re = new XMLHttpRequest()
-re.open('GET', 'talks.json')
-re.onloadend= () => {
-	talkdata = JSON.parse(re.responseText)
-}
-re.send()
-let r = new XMLHttpRequest()
-r.open("GET", "slasho.json")
-r.onloadend = () =>{
+fetch('slasho.json')
+.then(d => d.json())
+.then(e => {
 	spinner.style.display = 'none'
 	document.querySelector('.bod').style.display = 'block'
-	data = r.responseText
-	data = JSON.parse(data)
-	//
+	data = e 
 	all(data)
 	//highlighting tabs
-	for(let i=0; i<tab.length; i++){
-		if(i == highlight){
+	for (let i = 0; i < tab.length; i++) {
+		if (i == highlight) {
 			tab[i].classList.add('highlight')
-		}else{
+		} else {
 			tab[i].classList.remove('highlight')
 		}
 	}
-	
-}
-r.send()
+})
 
 window.onkeyup = e =>{
 	if(e.key == "ArrowUp"){
@@ -85,7 +75,13 @@ document.onclick = e => {
 			body.innerHTML = ''
 			highlight = 1
 			data.forEach(d=>{
-				body.innerHTML += '<br><div class="wrap"><i></i><span class="year">'+d.year+'</span></div><br><br>'
+				let counter = 0
+				d.data.forEach(l=>{
+					if(l.type == 'ml'){
+						counter++
+					}
+				})
+				body.innerHTML += '<br><div class="wrap"><i></i><span class="year">' + d.year + '</span><span class="projectperyear">Done ' + counter + ' projects this year</span></div><br><br>'
 				d.data.forEach(l =>{
 					if(l.type == 'ml'){
 						totalProjects++
@@ -112,7 +108,13 @@ document.onclick = e => {
 			body.innerHTML = ''
 			highlight = 2
 			data.forEach(d=>{
-				body.innerHTML += '<br><div class="wrap"><i></i><span class="year">'+d.year+'</span></div><br><br>'
+				let counter = 0
+				d.data.forEach(l => {
+					if (l.type == 'cc') {
+						counter++
+					}
+				})
+				body.innerHTML += '<br><div class="wrap"><i></i><span class="year">' + d.year + '</span><span class="projectperyear">Done ' + counter + ' projects this year</span></div><br><br>'
 				d.data.forEach(l =>{
 					if(l.type == 'cc'){
 						totalProjects++
@@ -139,7 +141,13 @@ document.onclick = e => {
 			body.innerHTML = ''
 			highlight = 3
 			data.forEach(d=>{
-				body.innerHTML += '<br><div class="wrap"><i></i><span class="year">'+d.year+'</span></div><br><br>'
+				let counter = 0
+				d.data.forEach(l => {
+					if (l.type == 'fed') {
+						counter++
+					}
+				})
+				body.innerHTML += '<br><div class="wrap"><i></i><span class="year">' + d.year + '</span><span class="projectperyear">Done ' + counter + ' projects this year</span></div><br><br>'
 				d.data.forEach(l =>{
 					if(l.type == 'fed'){
 						totalProjects++
@@ -166,7 +174,13 @@ document.onclick = e => {
 			body.innerHTML = ''
 			highlight = 4
 			data.forEach(d=>{
-				body.innerHTML += '<br><div class="wrap"><i></i><span class="year">'+d.year+'</span></div><br><br>'
+				let counter = 0
+				d.data.forEach(l => {
+					if (l.type == 'bed') {
+						counter++
+					}
+				})
+				body.innerHTML += '<br><div class="wrap"><i></i><span class="year">' + d.year + '</span><span class="projectperyear">Done ' + counter + ' projects this year</span></div><br><br>'
 				d.data.forEach(l =>{
 					if(l.type == 'bed'){
 						totalProjects++
@@ -193,7 +207,13 @@ document.onclick = e => {
 			body.innerHTML = ''
 			highlight = 5
 			data.forEach(d=>{
-				body.innerHTML += '<br><div class="wrap"><i></i><span class="year">'+d.year+'</span></div><br><br>'
+				let counter = 0
+				d.data.forEach(l => {
+					if (l.type == 'ld') {
+						counter++
+					}
+				})
+				body.innerHTML += '<br><div class="wrap"><i></i><span class="year">' + d.year + '</span><span class="projectperyear">Done ' + counter + ' projects this year</span></div><br><br>'
 				d.data.forEach(l =>{
 					if(l.type == 'ld'){
 						totalProjects++
@@ -289,7 +309,7 @@ function all(data){
 	// console.log(ml, cc, fed, bed, ld)
 	
 	data.forEach(d=>{
-		body.innerHTML += '<br><div class="wrap"><i></i><span class="year">'+d.year+'</span></div><br><br>'
+		body.innerHTML += '<br><div class="wrap"><i></i><span class="year">'+d.year+'</span><span class="projectperyear">Done '+d.data.length+' projects this year</span></div><br><br>'
 		d.data.forEach(l =>{
 			totalProjects++
 			//Pasting projects in body
@@ -478,7 +498,7 @@ function talkPosts(){
 }
 
 
-document.onmousedown = e =>{
+document.onmousedown = element =>{
 	if(element.classList == 'click'){
 		if(element.dataset.url){
 			if(element.dataset.url == 'projects'){
@@ -581,7 +601,7 @@ if(window.name == 'projects'){
 	code.style.display = 'none'
 	about.style.display = 'block'
 	talks.style.display = 'none'
-	toptabs[2].classList.add('h')
+	toptabs[3].classList.add('h')
 }else if(window.name == 'talks'){
 	history.pushState({ title: 'Talks', page: 'talks'}, "talks", 'talks')
 	toptabs.forEach(t=>{
