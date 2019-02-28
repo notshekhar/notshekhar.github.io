@@ -21,9 +21,16 @@ bed = 0,
 ld = 0;
 //updating history
 history.pushState({ title: 'slasho { codebeat }', page: 'home'}, "home", './')
-
-
 code.style.display = 'block'
+
+//fetching talks
+fetch('./talks.json')
+.then(d => d.json())
+.then(data => {
+	talkdata = data
+	talkPosts()
+})
+//fetching slasho data
 fetch('slasho.json')
 .then(d => d.json())
 .then(e => {
@@ -612,13 +619,12 @@ if(window.name == 'projects'){
 	about.style.display = 'none'
 	talks.style.display = 'block'
 	toptabs[1].classList.add('h')
-	let rq = new XMLHttpRequest()
-	rq.open('GET', './talks.json')
-	rq.onloadend= () => {
-		talkdata = JSON.parse(re.responseText)
+	fetch('./talks.json')
+	.then(d=>d.json())
+	.then(data=>{
+		talkdata = data 
 		talkPosts()
-	}
-	rq.send()
+	})
 }
 
 window.name = ''
