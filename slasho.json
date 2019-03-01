@@ -2,6 +2,13 @@
   "year": 2019,
   "data":[
     {
+      "title": "KNN Classifier using ml5js library (created a classifier like teachable machine)",
+      "url": "https://github.com/notshekhar/KNN-Classifier/",
+      "date": "March 01, 2019",
+      "demo": "https://notshekhar.github.io/KNN-Classifier/",
+      "type": "ml"
+    },
+    {
       "title": "Scroll Bar Indictor",
       "url": "https://github.com/notshekhar/Scroll-Bar-Indicator/",
       "date": "Feb 21, 2019",
