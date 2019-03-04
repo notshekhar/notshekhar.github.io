@@ -2,6 +2,18 @@
   "year": 2019,
   "data":[
     {
+      "title": "Logo Design for Ramanika",
+      "url": "https://github.com/notshekhar/KNN-Classifier/",
+      "date": "March 03, 2019",
+      "type": "ld"
+    },
+    {
+      "title": "Logo Design for Akshun",
+      "url": "https://github.com/notshekhar/KNN-Classifier/",
+      "date": "March 03, 2019",
+      "type": "ld"
+    },
+    {
       "title": "KNN Classifier using ml5js library (created a classifier like teachable machine)",
       "url": "https://github.com/notshekhar/KNN-Classifier/",
       "date": "March 01, 2019",
