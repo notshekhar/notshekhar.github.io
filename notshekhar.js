@@ -31,7 +31,7 @@ fetch('./talks.json')
 	talkPosts()
 })
 //fetching slasho data
-fetch('slasho.json')
+fetch('notshekhar.json')
 .then(d => d.json())
 .then(e => {
 	spinner.style.display = 'none'
