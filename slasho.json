@@ -2,6 +2,13 @@
   "year": 2019,
   "data":[
     {
+      "title": "Calculating Digits of PI with Collisions",
+      "url": "https://github.com/notshekhar/calculating-digits-of-pi-with-collisions/",
+      "date": "March 17, 2019",
+      "demo": "calculating-digits-of-pi-with-collisions",
+      "type": "cc"
+    },
+    {
       "title": "Selection Sort Visualisation",
       "url": "https://github.com/notshekhar/Selection-Sort-Visualisation/",
       "date": "March 12, 2019",
