@@ -648,14 +648,14 @@ expand.onclick = () => {
 		kf = true
 	}
 }
-function cftpush(){
-	console.log(cftdata)
-	let html = cftdata.map(d=>{
-		k = `<hr><li class="cft">${d.name}</li><br>`
-		return k
-	}).join(" ")
-	cft.innerHTML = html
-}
+// function cftpush(){
+// 	console.log(cftdata)
+// 	let html = cftdata.map(d=>{
+// 		k = `<hr><li class="cft">${d.name}</li><br>`
+// 		return k
+// 	}).join(" ")
+// 	cft.innerHTML = html
+// }
 
 
 window.name = ''
