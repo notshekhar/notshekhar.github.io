@@ -10,6 +10,8 @@ let toptabs = document.querySelectorAll('.toptab')
 let about = document.querySelector('.about')
 let talks = document.querySelector('.talks')
 let talkbody = document.querySelector('.talkbody')
+let cft = document.querySelector('.certification')
+let cftdata
 let data
 let talkdata
 let highlight = 0
@@ -30,6 +32,13 @@ fetch('./talks.json')
 	talkdata = data
 	talkPosts()
 })
+//fetching certificates
+fetch('./certificates.json')
+	.then(d => d.json())
+	.then(data => {
+		cftdata = data
+		cftpush()
+	})
 //fetching slasho data
 fetch('notshekhar.json')
 .then(d => d.json())
@@ -626,5 +635,27 @@ if(window.name == 'projects'){
 		talkPosts()
 	})
 }
+
+let expand = document.querySelector('.expand')
+let kf = true
+expand.onclick = () => {
+	console.log(cft)
+	if(kf){
+		cft.style.height = '200px'
+		kf = false
+	}else{
+		cft.style.height = '0px'
+		kf = true
+	}
+}
+function cftpush(){
+	console.log(cftdata)
+	let html = cftdata.map(d=>{
+		k = `<hr><li class="cft">${d.name}</li><br>`
+		return k
+	}).join(" ")
+	cft.innerHTML = html
+}
+
 
 window.name = ''
