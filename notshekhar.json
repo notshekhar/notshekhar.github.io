@@ -2,6 +2,12 @@
   "year": 2019,
   "data":[
     {
+      "title": "Created Vector Library In JavaScript",
+      "url": "https://github.com/notshekhar/Vector-Library-in-JavaScript/",
+      "date": "March 20, 2019",
+      "type": "cc"
+    },
+    {
       "title": "Approximating the Value of PI using Ruby",
       "url": "https://github.com/notshekhar/Approximating-the-Value-of-PI-using-Ruby/",
       "date": "March 19, 2019",
