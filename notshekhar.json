@@ -2,11 +2,12 @@
   {
     "year": 2019,
     "data": [
+      
       {
-        "title": "QuickSort Visualisation",
-        "url": "https://github.com/notshekhar/quicksort-visualisation/",
+        "title": "Sorting algorithm library in JavaScript",
+        "url": "https://github.com/notshekhar/sortingAgorithm/",
         "date": "April 05, 2019",
-        "demo": "quicksort-visualisation",
+        "demo": "sortingAlgorithm",
         "type": "cc"
       },
       {
