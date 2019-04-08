@@ -2,7 +2,13 @@
   {
     "year": 2019,
     "data": [
-      
+      {
+        "title": "Body Pixels using Tensorflow.js",
+        "url": "https://github.com/notshekhar/bodyPix/",
+        "date": "April 05, 2019",
+        "demo": "bodyPix",
+        "type": "ml"
+      },
       {
         "title": "Sorting algorithm library in JavaScript",
         "url": "https://github.com/notshekhar/sortingAgorithm/",
