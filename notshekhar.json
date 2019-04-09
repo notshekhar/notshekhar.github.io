@@ -13,7 +13,13 @@
         "title": "Sorting algorithm library in JavaScript",
         "url": "https://github.com/notshekhar/sortingAgorithm/",
         "date": "April 05, 2019",
-        "demo": "sortingAlgorithm",
+        "type": "cc"
+      },
+      {
+        "title": "Selection Sort Visualisation",
+        "url": "https://github.com/notshekhar/quicksort-visualisation//",
+        "date": "April 05, 2019",
+        "demo": "quicksort-visualisation/",
         "type": "cc"
       },
       {
