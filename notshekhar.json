@@ -9,12 +9,6 @@
         "demo": "https://csb-9j6v2y1zky.netlify.com/",
         "type": "fed"
       },
-      // {
-      //   "title": "Created a Android application for ThunderBuzz",
-      //   "url": "https://play.google.com/store/apps/details?id=net.thunderbuzz.forum",
-      //   "date": "April 10, 2019",
-      //   "type": "fed"
-      // },
       {
         "title": "Body Pixels using Tensorflow.js",
         "url": "https://github.com/notshekhar/bodyPix/",
