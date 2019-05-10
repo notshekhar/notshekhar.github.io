@@ -3,6 +3,12 @@
     "year": 2019,
     "data": [
       {
+        "title": "YouTube bot to increase views with Puppeteer",
+        "url": "https://github.com/notshekhar/youtubebot/",
+        "date": "May 10, 2019",
+        "type": "cc"
+      },
+      {
         "title": "Refactored 'BodyPix with tensorflow.js' using WebWorker",
         "url": "https://github.com/notshekhar/bodyPixWithWebWorker/",
         "date": "April 27, 2019",
