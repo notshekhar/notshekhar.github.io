@@ -645,7 +645,7 @@ donate.onclick = () => {
 	request.show().then(e=>{
 		console.log(e)
 	})
-	
+
 }
 
 window.name = ''
