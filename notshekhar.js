@@ -629,21 +629,23 @@ if(window.name == 'projects'){
 
 //for donation 
 let donate = document.querySelector("#donate")
-const request = new PaymentRequest([{
-	supportedMethods: 'basic-card'
-}], {
-	total: {
-		label: 'Donate',
-		amount: {
-			value: '10',
-			currency: 'USD'
-		}
-	}
-});
 donate.onclick = () => {
+	let money = prompt("Enter the Donation Amount USD")
+	const request = new PaymentRequest([{
+		supportedMethods: 'basic-card'
+	}], {
+		total: {
+			label: 'Donate',
+			amount: {
+				value: money,
+				currency: 'USD'
+			}
+		}
+	});
 	request.show().then(e=>{
 		console.log(e)
 	})
+	
 }
 
 window.name = ''
