@@ -6,20 +6,27 @@
   <link rel="stylesheet" href="notshekhar.css">
   <link rel="shortcut icon" href="slso.png" />
   <link rel="manifest" href="manifest.json">
-  
   <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> -->
   <title>notshekhar</title>
   <script src="analystic.js" charset="utf-8"></script>
   <script type="text/javascript">
+  //preventing from fetching from iframe
     if (window.top !== window.self){
       window.self.location.replace(window.top.location.href+window.self.location.href)
     }
     window.dataLayer = window.dataLayer || []
+    //google analystic
     function gtag(){
       dataLayer.push(arguments)
     }
     gtag('js', new Date())
     gtag('config', 'UA-127761971-1')
+    //adding service worker
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker
+          .register('/sw.js')
+          .then(function () { console.log("Service Worker Registered"); });
+      }
   </script>
 </head>
 <body>
@@ -41,7 +48,7 @@
       </div>
       <div id="followButtons">
         <!-- donate button -->
-        <a href="https://www.paypal.me/notshekhar" target="_blank" id="donate" rel="noopener noreferrer">Donate</a>
+        <button id="donate">Donate</button>
         <!-- github follow -->
         <a class="github-button" href="https://github.com/notshekhar" data-size="large" data-show-count="true" aria-label="Follow @ntkme on GitHub">Follow @me</a>
         <!-- twittwr follow button -->

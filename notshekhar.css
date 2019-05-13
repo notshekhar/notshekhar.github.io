@@ -26,12 +26,12 @@ body{
   border: solid;
   border-color: rgb(255, 196, 4);
   border-radius: 300px;
-  height: 18px;
+  height: 21px;
   width: 100px;
   margin-bottom: 5px;
   border-width: 1.5px;
   color: rgb(255, 196, 4);
-  text-align: center;
+  outline: none;
 }
 #donate:hover{
   color:white;

@@ -1,11 +1,16 @@
 {
-  "name": "slasho { codebeat }",
-  "short_name": "{ s/o }",
+  "name": "notshekhar",
+  "short_name": "notshekhar",
   "theme_color": "white",
   "background_color": "white",
   "display": "fullscreen",
   "Scope": "/",
   "start_url": "/",
+  "serviceworker": {
+    "src": "sw.js",
+    "scope": "/",
+    "use_cache": true
+  },
   "icons": [
     {
       "src": "slso512.png",
