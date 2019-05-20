@@ -3,6 +3,13 @@
     "year": 2019,
     "data": [
       {
+        "title": "2D Ray Casting",
+        "url": "https://github.com/notshekhar/RayCasting/",
+        "date": "May 20, 2019",
+        "demo": "RayCasting",
+        "type": "cc"
+      },
+      {
         "title": "2D Ray Tracing",
         "url": "https://github.com/notshekhar/RayTracing/",
         "date": "May 20, 2019",
