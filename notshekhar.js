@@ -642,8 +642,9 @@ donate.onclick = () => {
 			}
 		}
 	});
-	request.show().then(e=>{
-		console.log(e)
+	request.show().then(response=>{
+		response.complete()
+		console.log(response)
 	})
 
 }
