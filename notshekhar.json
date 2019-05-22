@@ -3,6 +3,19 @@
     "year": 2019,
     "data": [
       {
+        "title": "KNN Classifier With KNN Library I've created using JavaScript",
+        "url": "https://github.com/notshekhar/KNN-Classifier-With-KNN-Library-JavaScript/",
+        "date": "May 22, 2019",
+        "demo": "KNN-Classifier-With-KNN-Library-JavaScript",
+        "type": "ml"
+      },
+      {
+        "title": "KNN Library with JavaScript",
+        "url": "https://github.com/notshekhar/KNN-Library-with-JavaScript/",
+        "date": "May 21, 2019",
+        "type": "ml"
+      },
+      {
         "title": "2D Ray Tracing",
         "url": "https://github.com/notshekhar/RayTracing2D/",
         "date": "May 20, 2019",
