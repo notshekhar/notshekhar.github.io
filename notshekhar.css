@@ -78,11 +78,11 @@ body{
   position: fixed;
   top: 0px;
   left: 0px;
-  background-image: url(spin.gif);
+  background-image: url(loading.gif);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-size: 20px;
+  background-size: 40px;
   background-color: white;
   z-index: 3;
 }
