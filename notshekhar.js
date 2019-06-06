@@ -628,25 +628,25 @@ if(window.name == 'projects'){
 }
 
 //for donation 
-let donate = document.querySelector("#donate")
-donate.onclick = () => {
-	let money = prompt("Enter the Donation Amount USD")
-	const request = new PaymentRequest([{
-		supportedMethods: 'basic-card'
-	}], {
-		total: {
-			label: 'Donate',
-			amount: {
-				value: money,
-				currency: 'USD'
-			}
-		}
-	});
-	request.show().then(response=>{
-		response.complete()
-		console.log(response)
-	})
+// let donate = document.querySelector("#donate")
+// donate.onclick = () => {
+// 	let money = prompt("Enter the Donation Amount USD")
+// 	const request = new PaymentRequest([{
+// 		supportedMethods: 'basic-card'
+// 	}], {
+// 		total: {
+// 			label: 'Donate',
+// 			amount: {
+// 				value: money,
+// 				currency: 'USD'
+// 			}
+// 		}
+// 	});
+// 	request.show().then(response=>{
+// 		response.complete()
+// 		console.log(response)
+// 	})
 
-}
+// }
 
 window.name = ''
