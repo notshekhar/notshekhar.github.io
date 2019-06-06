@@ -4,6 +4,13 @@
     "data": [
       {
         "title": "WebAPIs: Battery API",
+        "url": "https://github.com/notshekhar/WebAPIs/tree/master/BroadcastChannelAPI/",
+        "date": "June 06, 2019",
+        "demo": "WebAPIs/BroadcastChannelAPI",
+        "type": "fed"
+      },
+      {
+        "title": "WebAPIs: Battery API",
         "url": "https://github.com/notshekhar/WebAPIs/tree/master/BatteryAPI/",
         "date": "June 06, 2019",
         "demo": "WebAPIs/BatteryAPI",
