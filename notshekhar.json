@@ -3,6 +3,13 @@
     "year": 2019,
     "data": [
       {
+        "title": "WebAPIs: Battery API",
+        "url": "https://github.com/notshekhar/WebAPIs/tree/master/BatteryAPI/",
+        "date": "June 06, 2019",
+        "demo": "WebAPIs/BatteryAPI",
+        "type": "fed"
+      },
+      {
         "title": "AES Symmetric Key Cryptography Algorithm in JavaScript",
         "url": "https://github.com/notshekhar/AES-Symmetric-Key-Cryptography-algorithm/",
         "date": "May 23, 2019",
