@@ -3,6 +3,13 @@
     "year": 2019,
     "data": [
       {
+        "title": "Encryption And Decryption App using AES Algorithm",
+        "url": "https://github.com/notshekhar/AES_Encryption_And_Decryption_App/",
+        "date": "June 12, 2019",
+        "demo": "AES_Encryption_And_Decryption_App",
+        "type": "cc"
+      },
+      {
         "title": "WebAPIs: Broadcast Channel API",
         "url": "https://github.com/notshekhar/WebAPIs/tree/master/BroadcastChannelAPI/",
         "date": "June 06, 2019",
