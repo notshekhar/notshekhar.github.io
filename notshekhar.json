@@ -3,6 +3,13 @@
     "year": 2019,
     "data": [
       {
+        "title": "Chrome Dinosaur Game",
+        "url": "https://github.com/notshekhar/dino_game/",
+        "date": "Jun 20, 2019",
+        "demo": "dino_game",
+        "type": "cc"
+      },
+      {
         "title": "Personal Logo Design",
         "url": "https://github.com/notshekhar/LogoDesigns/tree/master/personal/",
         "date": "Jun 13, 2019",
