@@ -3,6 +3,13 @@
     "year": 2019,
     "data": [
       {
+        "title": "Genetic Algorithm To Automate Dinosaur Game",
+        "url": "https://github.com/notshekhar/genetic_algorithm_to_automate_dinosaur_game/",
+        "date": "Jun 21, 2019",
+        "demo": "genetic_algorithm_to_automate_dinosaur_game",
+        "type": "ml"
+      },
+      {
         "title": "Chrome Dinosaur Game",
         "url": "https://github.com/notshekhar/dino_game/",
         "date": "Jun 20, 2019",
