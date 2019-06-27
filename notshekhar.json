@@ -3,6 +3,13 @@
     "year": 2019,
     "data": [
       {
+        "title": "Color Train using NOOPS HEXBOT (#noopschallenge)",
+        "url": "https://github.com/notshekhar/hexbot/",
+        "date": "Jun 27, 2019",
+        "demo": "hexbot",
+        "type": "cc"
+      },
+      {
         "title": "Genetic Algorithm To Automate Dinosaur Game and bundled all JS files using WEBPACK",
         "url": "https://github.com/notshekhar/genetic_algorithm_to_automate_dinosaur_game/",
         "date": "Jun 21, 2019",
