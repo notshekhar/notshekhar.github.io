@@ -3,6 +3,12 @@
     "year": 2019,
     "data": [
       {
+        "title": "Calculating value of PI with Mandelbrot Set",
+        "url": "https://github.com/notshekhar/PI_with_Mandelbrot_Set/",
+        "date": "Jun 28, 2019",
+        "type": "cc"
+      },
+      {
         "title": "Color Train using NOOPS HEXBOT (#noopschallenge)",
         "url": "https://github.com/notshekhar/hexbot/",
         "date": "Jun 27, 2019",
