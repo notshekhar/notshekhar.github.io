@@ -3,6 +3,13 @@
     "year": 2019,
     "data": [
       {
+        "title": "Visualization of Gift Wraping Algorithm",
+        "url": "https://github.com/notshekhar/gift_wraping_algorithm/",
+        "date": "Jun 29, 2019",
+        "demo": "gift_wraping_algorithm",
+        "type": "cc"
+      },
+      {
         "title": "Calculating value of PI with Mandelbrot Set using Python",
         "url": "https://github.com/notshekhar/PI_with_Mandelbrot_Set/",
         "date": "Jun 28, 2019",
