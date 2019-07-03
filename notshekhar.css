@@ -407,6 +407,10 @@ a{
   height: 20px;
   margin-left: -100px;
 }
+.lin{
+  flex: 1;
+  position: relative;
+}
 .fol{
   position: absolute;
   width: 20px;
@@ -415,6 +419,7 @@ a{
   margin-right: 3px;
   transition: all 500ms;
 }
+/* temp changes */
 .fol:hover{
   width: 25px;
   height: 25px;
@@ -437,10 +442,6 @@ a{
 .fol:hover + .foltitle{
   display: flex;
   justify-content: center;
-}
-.lin{
-  flex: 1;
-  position: relative;
 }
 #followButtons{
   position: absolute;
