@@ -76,17 +76,8 @@ document.onclick = e => {
 			body.innerHTML = ''
 			highlight = 0
 			all(data)
-		}else if(tabs == 'ml'){
-			//getting number of ml and cc and fed and bed and ld projects
-			query("ml")
-		}else if(tabs == 'cc'){
-			query("cc")
-		}else if(tabs == 'fed'){
-			query("fed")
-		}else if(tabs == 'bed'){
-			query("bed")
-		}else if(tabs == 'ld'){
-			query("ld")
+		}else if(tabs != 'all'){
+			query(tabs)
 		}
 		//highlighting tabs
 		for(let i=0; i<tab.length; i++){
@@ -411,9 +402,9 @@ function query(type){
 			if (l.type == type) {
 				totalProjects++
 				if (l.demo) {
-					body.innerHTML += `<li><div class="card"><div class="list"><a href='${l.url}' target="_blank">${type_text} #${bed}: ${l.title} - { ${l.date} }</a></div><a href='${l.demo}' class="demo-url" target="_blank">&#9757; See project</a></div></li>`
+					body.innerHTML += `<li><div class="card"><div class="list"><a href='${l.url}' target="_blank">${type_text} #${n}: ${l.title} - { ${l.date} }</a></div><a href='${l.demo}' class="demo-url" target="_blank">&#9757; See project</a></div></li>`
 				} else {
-					body.innerHTML += `<li><div class="card"><div class="list"><a href='${l.url}' target="_blank">${type_text} #${bed}: ${l.title} - { ${l.date} }</a></div>`
+					body.innerHTML += `<li><div class="card"><div class="list"><a href='${l.url}' target="_blank">${type_text} #${n}: ${l.title} - { ${l.date} }</a></div>`
 				}
 				n--
 			}
