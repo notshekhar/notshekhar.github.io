@@ -408,10 +408,30 @@ a{
 }
 .fol{
   width: 20px;
+  height: 20px;
+  border-radius: 50%;
   margin-right: 3px;
+}
+.foltitle{
+  position: absolute;
+  top: -30px;
+  min-width: 100px;
+  padding: 3px;
+  left: calc(50% - 50px);
+  display: none;
+  color: white;
+  background: black;
+  border-radius: 100px;
+  z-index: 3;
+  opacity: 0.6;
+}
+.fol:hover + .foltitle{
+  display: flex;
+  justify-content: center;
 }
 .lin{
   flex: 1;
+  position: relative;
 }
 #followButtons{
   position: absolute;
