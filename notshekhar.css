@@ -404,13 +404,22 @@ a{
   display: flex;
   left: 50%;
   width: 200px;
+  height: 20px;
   margin-left: -100px;
 }
 .fol{
+  position: absolute;
   width: 20px;
   height: 20px;
   border-radius: 50%;
   margin-right: 3px;
+  transition: all 500ms;
+}
+.fol:hover{
+  width: 25px;
+  height: 25px;
+  top: calc(50% - 12.5px);
+  left: calc(50% - 12.5px);
 }
 .foltitle{
   position: absolute;
