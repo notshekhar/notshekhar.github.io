@@ -1,6 +1,24 @@
+:root{
+  --bg-color: white;
+  --bg1-color: white;
+  --color: rgb(20, 20, 20);
+  --highlight-color: #f2f2f2;
+  --border: solid;
+  --shadow: 0 1px 3px 1px rgba(60, 64, 67, 0.15),
+  0 1px 2px 0 rgba(60, 64, 67, 0.3);
+}
+/* :root{
+  --bg-color: #1e1e1e;
+  --bg1-color: #252526;
+  --color: #adadad;
+  --highlight-color: #37373d;
+  --border: none;
+  --shadow: 0 1px 3px 1px rgba(60, 64, 67, 0.15),
+  0 1px 2px 0 rgba(60, 64, 67, 0.3);
+} */
 @font-face {
-  font-family: slasho;
-  src: url(slasho.ttf);
+  font-family: notshekhar;
+  src: url(notshekhar.ttf);
 }
 @font-face {
   font-family: acme;
@@ -11,7 +29,8 @@
   src: url(Lob.ttf);
 }
 body{
-  font-family: slasho;
+  font-family: notshekhar;
+  background: var(--bg-color);
 }
 .bod{
   display: none;
@@ -90,6 +109,7 @@ body{
 .title{
   position: relative;
   margin-top: -20px;
+  margin-left: 20px;
   font-size: 40px;
   font-weight: 600px;
   font-family: log;
@@ -121,6 +141,39 @@ body{
   z-index: 3;
   animation: glagla 1s forwards;
 }
+.tab_fixed{
+  position: fixed;
+  background: var(--bg1-color);
+  top: 0px;
+  left: 300px;
+  margin-top: 8px;
+  box-shadow: rgba(60, 64, 67, 0.15) 5px 0px 3px 1px,
+  rgba(60, 64, 67, 0.3) 4px -1px 2px 0px;
+  width: calc(100% - 300px);
+}
+.tab_fixed_for_mobile{
+  position: fixed;
+  background: var(--bg1-color);
+  top: 0px;
+  left: 0px;
+  margin-top: 8px;
+  box-shadow: rgba(60, 64, 67, 0.15) 5px 0px 3px 1px,
+  rgba(60, 64, 67, 0.3) 4px -1px 2px 0px;
+}
+#nightmode{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: white;
+  outline: none;
+  overflow: hidden;
+  border-radius: 50%;
+
+}
+
 @keyframes glagla {
   100%{
     height: 60px;
@@ -129,11 +182,12 @@ body{
 }
 .tab{
   flex: 1;
-  font-family: slasho;
+  font-family: notshekhar;
   font-size: 15px;
   background: rgba(0,0,0,0);
   border: none;
   outline: none;
+  color: var(--color);
   opacity: 1;
 }
 .tab:hover{
@@ -175,9 +229,9 @@ body{
   width: 300px;
   height: 100%;
   min-height: 500px;
-  border: solid;
-  background: white;
-  /* border-color: #9d9d9d; */
+  border: var(--border);
+  background: var(--bg1-color);
+  border-color: #9d9d9d;
   border-image: linear-gradient(to bottom, white 15%, #9d9d9d 75%, white 100%);
   border-image-slice: 1;
   border-width: 0 1px 0 0;
@@ -203,7 +257,7 @@ body{
 }
 
 .toptab{
-  background: white;
+  background: var(--bg1-color);
   flex:1;
   position: relative;
   margin-left: 50px;
@@ -213,6 +267,7 @@ body{
   font-family: acme;
   font-size: 20px;
   border-radius: 50px 0 0 50px;
+  color: var(--color);
 }
 .toptab:hover{
   border: solid;
@@ -230,14 +285,14 @@ body{
   position: relative;
   border-radius: 4px;
   padding: 20px;
-  box-shadow: 0 1px 3px 1px rgba(60,64,67,0.15), 0 1px 2px 0 rgba(60,64,67,0.3);
+  box-shadow: var(--shadow);
   margin-top: 10px;
   margin-left: 10px;
   margin-right: 10px;
-  background: white;
+  background: var(--bg1-color);
 }
 .card:hover{
-  background: #f2f2f2;
+  background: var(--highlight-color);
   box-shadow: none;
 }
 #ppimg{
@@ -346,7 +401,7 @@ body{
   position: absolute;
   font-size: 20px;
   left: 20px;
-  font-family: slasho;
+  font-family: notshekhar;
   display: inline-block;
   background-image: linear-gradient(90deg, #F79533 0%, #F37055 15%, #EF4E7B 30%, #A166AB 44%, #5073B8 58%, #1098AD 72%, #07B39B 86%, #6DBA82 100%);
   background-size: cover;
@@ -382,7 +437,9 @@ a:hover{
 }
 .list{
   display: flex;
+  color: var(--color)
 }
+
 .date{
   flex: 1;
   font-weight: 400px;
@@ -391,7 +448,7 @@ a:hover{
 
 a{
   text-decoration: none;
-  color: black;
+  color: var(--color);
 }
 #follow{
   position: absolute;
@@ -408,11 +465,14 @@ a{
 }
 .fol{
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
   margin-right: 3px;
   transition: all 500ms;
+  border: solid;
+  border-color: var(--color);
+  border-width: 2px;
 }
 /* temp changes */
 .fol:hover{
@@ -466,8 +526,9 @@ a{
   text-decoration: underline;
 }
 p{
-  font-family: slasho;
+  font-family: notshekhar;
   font-size: 18px;
+  color: var(--color)
 }
 .y{
   position: relative;
@@ -540,7 +601,6 @@ p{
     height: auto;
   }
   .tabs{
-    position: relative;
     left: 0px;
     top: 0px;
     box-shadow: rgba(60, 64, 67, 0.15) 5px 0px 3px 1px, rgba(60, 64, 67, 0.3) 4px -1px 2px 0px;
