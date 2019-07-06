@@ -8,15 +8,10 @@
 }
 @font-face {
   font-family: log;
-  src: url(Lob.ttf);
-}
-@font-face {
-  font-family: mono;
-  src: url(mono.ttf)
+  src: url(Lob.tstf);
 }
 body{
   font-family: slasho;
-  background: url(dot.png);
 }
 .bod{
   display: none;
