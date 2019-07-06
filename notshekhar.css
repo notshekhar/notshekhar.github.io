@@ -74,7 +74,7 @@ body{
   display: block;
 }
 #total{
-  color: blue;
+  color: var(--color);
   margin-left: 1000px;
   opacity: 0;
   animation: vlavla 1s forwards;
@@ -171,7 +171,23 @@ body{
   outline: none;
   overflow: hidden;
   border-radius: 50%;
-
+}
+#mode{
+  display: none;
+  position: absolute;
+  top: 23px;
+  right: 60px;
+  padding: 2px;
+  padding-left: 8px;
+  padding-right: 8px;
+  background: var(--color);
+  color: var(--bg1-color);
+  z-index: 3;
+  border-radius: 300px;
+  opacity: 0.8;
+}
+#nightmode:hover + #mode {
+  display: block;
 }
 
 @keyframes glagla {
@@ -488,11 +504,11 @@ a{
   padding: 3px;
   left: calc(50% - 50px);
   display: none;
-  color: white;
-  background: black;
+  color: var(--bg1-color);
+  background: var(--color);
   border-radius: 100px;
   z-index: 3;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .fol:hover + .foltitle{
   display: flex;
