@@ -7,6 +7,7 @@
   --shadow: 0 1px 3px 1px rgba(60, 64, 67, 0.15),
   0 1px 2px 0 rgba(60, 64, 67, 0.3);
   --header-color: #7BE4D5;
+  --link-color: #ff487a;
 }
 /* :root{
   --bg-color: #1e1e1e;
@@ -205,18 +206,18 @@ body{
   opacity: 1;
 }
 .tab:hover{
-  color: #ff487a;
+  color: var(--link-color);
   border: none;
   border-bottom: solid;
-  border-bottom-color: #ff487a;
+  border-bottom-color: var(--link-color);
   border-bottom-width: 4px;
   outline: none;
 }
 .highlight{
-  color: #ff487a;
+  color: var(--link-color);
   border: none;
   border-bottom: solid;
-  border-bottom-color: #ff487a;
+  border-bottom-color: var(--link-color);
   border-bottom-width: 4px;
 }
 #header{
@@ -435,7 +436,7 @@ i{
   position: absolute;
   top: 0px;
   left: 0px;
-  background-color: #ff487a;
+  background-color: var(--link-color);
 }
 li{
   text-decoration: none;
@@ -447,7 +448,7 @@ li{
   display: none;
 }
 a:hover{
-  color: #ff487a;
+  color: var(--link-color);
 }
 .list{
   display: flex;
@@ -533,7 +534,7 @@ a{
   flex: 1;
 }
 .click{
-  color: #ff487a;
+  color: var(--link-color);
   cursor: pointer;
 }
 .click:hover{
