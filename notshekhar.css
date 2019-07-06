@@ -3,9 +3,10 @@
   --bg1-color: white;
   --color: rgb(20, 20, 20);
   --highlight-color: #f2f2f2;
-  --border: solid;
+  --border-color: solid;
   --shadow: 0 1px 3px 1px rgba(60, 64, 67, 0.15),
   0 1px 2px 0 rgba(60, 64, 67, 0.3);
+  --header-color: #7BE4D5;
 }
 /* :root{
   --bg-color: #1e1e1e;
@@ -147,8 +148,6 @@ body{
   top: 0px;
   left: 300px;
   margin-top: 8px;
-  box-shadow: rgba(60, 64, 67, 0.15) 5px 0px 3px 1px,
-  rgba(60, 64, 67, 0.3) 4px -1px 2px 0px;
   width: calc(100% - 300px);
 }
 .tab_fixed_for_mobile{
@@ -157,8 +156,7 @@ body{
   top: 0px;
   left: 0px;
   margin-top: 8px;
-  box-shadow: rgba(60, 64, 67, 0.15) 5px 0px 3px 1px,
-  rgba(60, 64, 67, 0.3) 4px -1px 2px 0px;
+  box-shadow: var(--shadow);
 }
 #nightmode{
   position: absolute;
@@ -227,10 +225,10 @@ body{
   height: 8px;
   width: 100%;
   position: fixed;
-  background: #7BE4D5;
+  background: var(--header-color);
   z-index: 1;
-  opacity: 0.8;
   animation: flafla 500ms forwards;
+  box-shadow: var(--shadow)
 }
 @keyframes flafla {
   100%{
@@ -245,10 +243,10 @@ body{
   width: 300px;
   height: 100%;
   min-height: 500px;
-  border: var(--border);
+  border: solid;
   background: var(--bg1-color);
   border-color: #9d9d9d;
-  border-image: linear-gradient(to bottom, white 15%, #9d9d9d 75%, white 100%);
+  border-image: linear-gradient(to bottom, var(--border-color) 15%, #9d9d9d 75%, var(--border-color) 100%);
   border-image-slice: 1;
   border-width: 0 1px 0 0;
   animation: alala 1s forwards;
@@ -619,9 +617,8 @@ p{
   .tabs{
     left: 0px;
     top: 0px;
-    box-shadow: rgba(60, 64, 67, 0.15) 5px 0px 3px 1px, rgba(60, 64, 67, 0.3) 4px -1px 2px 0px;
+    width: 100%;
   }
-  
 }
 @media (max-height: 500px) {
   #code{
