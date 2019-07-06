@@ -486,7 +486,7 @@ a{
   margin-right: 3px;
   transition: all 500ms;
   border: solid;
-  border-color: var(--color);
+  border-color: var(--highlight-color);
   border-width: 2px;
 }
 /* temp changes */
