@@ -3,6 +3,13 @@
     "year": 2019,
     "data": [
       {
+        "title": "Grey Code To Binary Generator",
+        "url": "https://github.com/notshekhar/grey_code_to_binary_generator/",
+        "date": "Aug 06, 2019",
+        "demo": "grey_code_to_binary_generator",
+        "type": "cc"
+      }, 
+      {
         "title": "FoodApp which showcase the meal for the next 30 days using ReactJS",
         "url": "https://github.com/notshekhar/foodapp/",
         "date": "Aug 04, 2019",
