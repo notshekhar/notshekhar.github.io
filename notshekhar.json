@@ -3,6 +3,13 @@
     "year": 2019,
     "data": [
       {
+        "title": "Text Toxicity with TensorflowJS",
+        "url": "https://github.com/notshekhar/text-toxicity-using-tfjs/",
+        "date": "Aug 30, 2019",
+        "demo": "text-toxicity-using-tfjs",
+        "type": "ml"
+      },
+      {
         "title": "Grey Code To Binary Generator",
         "url": "https://github.com/notshekhar/grey_code_to_binary_generator/",
         "date": "Aug 06, 2019",
