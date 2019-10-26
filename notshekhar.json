@@ -3,6 +3,13 @@
     "year": 2019,
     "data": [
       {
+        "title": "Mechanical Mirror Using BodyPix tfjs",
+        "url": "https://github.com/notshekhar/mechanical_mirror_using_BodyPix_TFjs/",
+        "date": "Oct 26, 2019",
+        "demo": "mechanical_mirror_using_BodyPix_TFjs",
+        "type": "ml"
+      },
+      {
         "title": "A* Path Finding Algorithm",
         "url": "https://github.com/notshekhar/a_star_path_finding_algo/",
         "date": "Oct 25, 2019",
