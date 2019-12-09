@@ -27,15 +27,15 @@
       google_ad_client: "ca-pub-7404107379730449",
       enable_page_level_ads: true
     });
-    //adding service worker
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker
-      .register('/sw.js')
-      .then(function () { console.log("Service Worker Registered"); });
-    }
   </script>
   <script>
-    
+    // Check that service workers are supported
+    if ('serviceWorker' in navigator) {
+      // Use the window load event to keep the page load performant
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js');
+      });
+    }
   </script>
 </head>
 <body>
