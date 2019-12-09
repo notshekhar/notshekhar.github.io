@@ -37,14 +37,14 @@ history.pushState({ title: 'slasho { codebeat }', page: 'home'}, "home", './')
 code.style.display = 'block'
 
 //fetching talks
-fetch('./talks.json')
+fetch('./js/talks.json')
 .then(d => d.json())
 .then(data => {
 	talkdata = data
 	talkPosts()
 })
 //fetching notshekhar data
-fetch('notshekhar.json')
+fetch('./js/notshekhar.json')
 .then(d => d.json())
 .then(e => {
 	spinner.style.display = 'none'
