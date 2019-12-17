@@ -2,6 +2,13 @@
   {
     "year": 2019,
     "data": [
+      {
+        "title": "Maze Generation with Recursive Backtrack Algorithm",
+        "url": "https://github.com/notshekhar/Maze_Generation_Recursive_Backtrack_Algorithm/",
+        "date": "Dec 17, 2019",
+        "demo": "Maze_Generation_Recursive_Backtrack_Algorithm",
+        "type": "cc"
+      },
       { 
         "title": "Interactive Drawing with SketchRNN",
         "url": "https://github.com/notshekhar/Interactive_Drawing_with_SketchRNN/",
