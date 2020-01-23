@@ -298,6 +298,8 @@ body{
 }
 .card{
   position: relative;
+  display: flex;
+  flex-direction: row;
   border-radius: 4px;
   padding: 20px;
   box-shadow: var(--shadow);
@@ -305,6 +307,19 @@ body{
   margin-left: 10px;
   margin-right: 10px;
   background: var(--bg1-color);
+}
+.timedate{
+  color: var(--color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  font-style: italic;
+  font-weight: 100;
+}
+.card_body{
+  flex: 8;
+  padding-right: 21px;
 }
 .card:hover{
   background: var(--highlight-color);
