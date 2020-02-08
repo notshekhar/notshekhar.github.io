@@ -3,11 +3,10 @@
 		"year": 2020,
 		"data": [
 			{
-				"title": "",
-				"url": "",
-				"date": "",
-				"demo": "",
-				"type": ""
+				"title": "A very basic interpreter",
+				"url": "https://github.com/notshekhar/basic_interpreter",
+				"date": "Feb 08, 2020",
+				"type": "cc"
 			}
 		]
 	},
