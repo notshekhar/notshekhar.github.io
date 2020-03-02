@@ -2,6 +2,8 @@
     {
         "year": 2020,
         "data": [
+            //technovation_2020
+            //gbu research paper
             {
                 "title": "A very basic interpreter",
                 "url": "https://github.com/notshekhar/basic_interpreter",
