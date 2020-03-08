@@ -2,8 +2,19 @@
     {
         "year": 2020,
         "data": [
-            //technovation_2020
-            //gbu research paper
+            {
+                "title": "URL Shortener (shorte)",
+                "url": "https://github.com/notshekhar/url_shortener",
+                "date": "March 08, 2020",
+                "demo": "https://shorte.glitch.me/",
+                "type": "bed"
+            },
+            {
+                "title": "Front End Development competition in Technovation",
+                "url": "https://github.com/notshekhar/technovation_2020",
+                "date": "Feb 27, 2020",
+                "type": "fed"
+            },
             {
                 "title": "A very basic interpreter",
                 "url": "https://github.com/notshekhar/basic_interpreter",
@@ -33,6 +44,12 @@
                 "url": "https://github.com/notshekhar/tic_tac_toe_game_using_JS/",
                 "date": "Dec 22, 2019",
                 "demo": "tic_tac_toe_game_using_JS",
+                "type": "cc"
+            },
+            {
+                "title": "Robotics Cometition (Eyantra) used Convolutional Neural Network and A* shortest path finding algorithm to solve maze",
+                "url": "https://github.com/notshekhar/eyantra_2019-2020",
+                "date": "Dec 19, 2019",
                 "type": "cc"
             },
             {
