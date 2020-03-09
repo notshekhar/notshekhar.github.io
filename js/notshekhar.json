@@ -3,7 +3,7 @@
         "year": 2020,
         "data": [
             {
-                "title": "URL Shortener (shorte)",
+                "title": "URL Shortener (shorte) using Express, Socketio, nedb",
                 "url": "https://github.com/notshekhar/url_shortener",
                 "date": "March 08, 2020",
                 "demo": "https://shorte.glitch.me/",
