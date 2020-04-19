@@ -3,16 +3,35 @@
         "year": 2020,
         "data": [
             {
+                "title": "Enable key word auto completion after a few letters typed. Follow-up: How to rank the words if they are weighted by frequency",
+                "url": "https://github.com/notshekhar/auto_completion_by-frequency_of-words_searched",
+                "date": "April 19, 2020",
+                "demo": "https://notshekhar.github.io/auto_completion_by-frequency_of-words_searched",
+                "technologies": ["html", "css", "js", "scss"],
+                "type": "fed"
+            },
+            {
                 "title": "URL Shortener (shorte) using Express, Socketio, nedb",
                 "url": "https://github.com/notshekhar/url_shortener",
                 "date": "March 08, 2020",
                 "demo": "https://shorte.glitch.me/",
+                "technologies": [
+                    "html",
+                    "css",
+                    "js",
+                    "node",
+                    "expressjs",
+                    "socketio",
+                    "nedb",
+                    "bootstrap"
+                ],
                 "type": "bed"
             },
             {
                 "title": "Front End Development competition in Technovation",
                 "url": "https://github.com/notshekhar/technovation_2020",
                 "date": "Feb 27, 2020",
+                "technologies": ["html", "css", "js"],
                 "type": "fed"
             },
             {
@@ -614,12 +633,14 @@
                 "url": "https://github.com/notshekhar/teachable-machine",
                 "date": "Aug 20, 2018",
                 "demo": "https://notshekhar.github.io/teachable-machine",
+                "technologies": ["html", "css", "js", "neural network"],
                 "type": "ml"
             },
             {
                 "title": "Login and signup page using python flask and Javascript",
                 "url": "https://github.com/notshekhar/login-and-signup-page-using-python-flask",
                 "date": "Aug 15, 2018",
+                "technologies": ["python", "flask", "html", "css", "js"],
                 "type": "bed"
             },
             {
@@ -627,6 +648,7 @@
                 "url": "https://github.com/notshekhar/flurr",
                 "date": "Jul 18, 2018",
                 "demo": "https://notshekhar.github.io/flurr/",
+                "technologies": ["html", "css", "js", "neural network"],
                 "type": "ml"
             },
             {
@@ -634,6 +656,7 @@
                 "url": "https://github.com/notshekhar/note",
                 "date": "Jul 5, 2018",
                 "demo": "https://notshekhar.github.io/note/",
+                "technologies": ["html", "css", "js"],
                 "type": "fed"
             },
             {
@@ -641,6 +664,7 @@
                 "url": "https://github.com/notshekhar/rnn_text_generate_js",
                 "date": "Jun 14, 2018",
                 "demo": "https://notshekhar.github.io/rnn_text_generate_js/",
+                "technologies": ["html", "js", "neural network"],
                 "type": "ml"
             },
             {
@@ -648,6 +672,7 @@
                 "url": "https://github.com/notshekhar/ml5_homepage_demo",
                 "date": "Jun 8, 2018",
                 "demo": "https://notshekhar.github.io/ml5_homepage_demo/",
+                "technologies": ["html", "css", "js"],
                 "type": "ml"
             },
             {
@@ -655,12 +680,14 @@
                 "url": "https://github.com/notshekhar/animations_js",
                 "date": "Jun 1, 2018",
                 "demo": "https://notshekhar.github.io/animations_js/bobo.htm",
+                "technologies": ["html", "css", "js"],
                 "type": "fed"
             },
             {
                 "title": "neuralnet ( multilayer neural network lib in JavaScript )",
                 "url": "https://github.com/notshekhar/neuralnet",
                 "date": "Apr 22, 2018",
+                "technologies": ["js"],
                 "type": "ml"
             },
             {
@@ -668,18 +695,21 @@
                 "url": "https://github.com/notshekhar/flur-web",
                 "date": "Apr 8, 2018",
                 "demo": "https://notshekhar.github.io/flur-web/",
+                "technologies": ["html", "css"],
                 "type": "fed"
             },
             {
                 "title": "Designed Banner of Office Bearers for School",
                 "url": "https://www.canva.com/design/DAC3sdZW-YA/8P6BzYvTHGrv9oigquh6mw/view?utm_content=DAC3sdZW-YA&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton",
                 "date": "May 30, 2018",
+                "technologies": ["canva.com"],
                 "type": "fed"
             },
             {
                 "title": "Neural_Network",
                 "url": "https://github.com/notshekhar/Neural-Network",
                 "date": "Mar 9, 2018",
+                "technologies": ["js"],
                 "type": "ml"
             },
             {
@@ -687,6 +717,7 @@
                 "url": "https://github.com/notshekhar/word2vec-js",
                 "date": "Feb 26, 2018",
                 "demo": "https://notshekhar.github.io/word2vec-js/",
+                "technologies": ["js"],
                 "type": "ml"
             }
         ]
@@ -698,6 +729,7 @@
                 "title": "For Tnsaino",
                 "url": "https://github.com/notshekhar/LogoDesigns/tree/master/tnsaino",
                 "date": "Dec 06, 2017",
+                "technologies": ["adobe photoshop"],
                 "type": "ld"
             },
             {
@@ -705,12 +737,14 @@
                 "url": "https://www.github.com/notshekhar/notsurf",
                 "date": "Dec 12, 2017",
                 "demo": "https://notshekhar.github.io/notsurf",
+                "technologies": ["html", "css"],
                 "type": "fed"
             },
             {
                 "title": "NotSurf",
                 "url": "https://www.github.com/notshekhar/LogoDesigns/tree/master/notsurf",
                 "date": "Dec 11, 2017",
+                "technologies": ["html", "css"],
                 "type": "ld"
             },
             {
@@ -718,6 +752,7 @@
                 "url": "https://www.github.com/notshekhar/school",
                 "date": "Jul 28, 2017",
                 "demo": "https://notshekhar.github.io/school",
+                "technologies": ["html", "css", "firebase", "js"],
                 "type": "fed"
             },
             {
@@ -725,18 +760,21 @@
                 "url": "https://www.github.com/notshekhar/edit",
                 "date": "Jul 5, 2017",
                 "demo": "https://notshekhar.github.io/edit",
+                "technologies": ["html", "css", "jQuery"],
                 "type": "cc"
             },
             {
                 "title": "Calender Design",
                 "url": "https://www.canva.com/design/DACXIwo2tqE/tzNrw0Hnh6u4vOIYOCb4sQ/view?utm_content=DACXIwo2tqE&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton",
                 "date": "Jun 23, 2017",
+                "technologies": ["canva.com"],
                 "type": "fed"
             },
             {
                 "title": "Flask Web Application",
                 "url": "https://github.com/notshekhar/flaspy",
                 "date": "Jun 4, 2017",
+                "technologies": ["python", "flask", "css", "html", "js"],
                 "type": "bed"
             },
             {
@@ -744,12 +782,14 @@
                 "url": "https://www.github.com/notshekhar/answer",
                 "date": "Mar 30, 2017",
                 "demo": "https://notshekhar.github.io/answer",
+                "technologies": ["html", "css"],
                 "type": "fed"
             },
             {
                 "title": "Designed Banner of Office Bearers for School",
                 "url": "https://www.canva.com/design/DACUDnoIUUE/bIL0Xf_Vr5KBjxN0KgiURw/view?utm_content=DACUDnoIUUE&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton",
                 "date": "May 27, 2017",
+                "technologies": ["canva.com"],
                 "type": "fed"
             }
         ]
