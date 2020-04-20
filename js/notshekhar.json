@@ -3,6 +3,14 @@
         "year": 2020,
         "data": [
             {
+                "title": "Written Brainfuck interpreter in JS",
+                "url": "https://github.com/notshekhar/brainfuck_interpreter",
+                "date": "April 20, 2020",
+                "demo": "https://raw.githubusercontent.com/notshekhar/brainfuck_interpreter/master/download/brainfuck.exe",
+                "technologies": ["js", "nodejs"],
+                "type": "cc"
+            },
+            {
                 "title": "Enable key word auto completion after a few letters typed. Follow-up: How to rank the words if they are weighted by frequency",
                 "url": "https://github.com/notshekhar/auto_completion_by-frequency_of-words_searched",
                 "date": "April 19, 2020",
