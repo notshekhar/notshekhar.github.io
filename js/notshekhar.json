@@ -3,6 +3,13 @@
         "year": 2020,
         "data": [
             {
+                "title": "Logo for drophope",
+                "url": "https://github.com/notshekhar/LogoDesigns/tree/master/drophope",
+                "date": "May 23, 2020",
+                "technologies": ["figma"],
+                "type": "ld"
+            },
+            {
                 "title": "Written Brainfuck interpreter in JS",
                 "url": "https://github.com/notshekhar/brainfuck_interpreter",
                 "date": "April 20, 2020",
