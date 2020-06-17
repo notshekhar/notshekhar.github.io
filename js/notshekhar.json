@@ -3,6 +3,14 @@
         "year": 2020,
         "data": [
             {
+                "title": "Beautiful Trigonometry Simulation",
+                "url": "https://github.com/notshekhar/BeautifulTrigonometry",
+                "date": "June 17, 2020",
+                "demo": "BeautifulTrigonometry",
+                "technologies": ["html", "css", "js", "canvas"],
+                "type": "css"
+            },
+            {
                 "title": "Logo for drophope",
                 "url": "https://github.com/notshekhar/LogoDesigns/tree/master/drophope",
                 "date": "May 23, 2020",
