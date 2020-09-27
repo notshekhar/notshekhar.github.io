@@ -3,6 +3,30 @@
         "year": 2020,
         "data": [
             {
+                "title": "Conway-s-Game-of-Life-Simulation",
+                "url": "https://github.com/notshekhar/Conway-s-Game-of-Life-Simulation",
+                "date": "Sept 27, 2020",
+                "demo": "Conway-s-Game-of-Life-Simulation",
+                "technologies": ["html", "js"],
+                "type": "cc"
+            },
+            {
+                "title": "Created Chess Bot using stockfish.js engine",
+                "url": "https://github.com/notshekhar/chess_bot_using_stockfish.js",
+                "date": "Aug 23, 2020",
+                "demo": "chess_bot_using_stockfish.js",
+                "technologies": [
+                    "html",
+                    "css",
+                    "js",
+                    "stockfish.js",
+                    "chess.js",
+                    "chessboard.js",
+                    "jQuery"
+                ],
+                "type": "cc"
+            },
+            {
                 "title": "Beautiful Trigonometry Simulation",
                 "url": "https://github.com/notshekhar/BeautifulTrigonometry",
                 "date": "June 17, 2020",
