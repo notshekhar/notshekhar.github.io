@@ -3,6 +3,14 @@
         "year": 2020,
         "data": [
             {
+                "title": "Simple text editor using window.showOpenFilePicker() API",
+                "url": "https://github.com/notshekhar/simple_text_editor/",
+                "date": "Oct 09, 2020",
+                "demo": "simple_text_editor",
+                "technologies": ["html", "js", "css"],
+                "type": "cc"
+            },
+            {
                 "title": "Smart Bees using genetic algorithm",
                 "url": "https://github.com/notshekhar/Smart-Bees",
                 "date": "Oct 07, 2020",
