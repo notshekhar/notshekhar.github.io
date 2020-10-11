@@ -3,6 +3,21 @@
         "year": 2020,
         "data": [
             {
+                "title": "Video Calling App using WebRTC, socketio and express",
+                "url": "https://github.com/notshekhar/Video-Calling-App",
+                "date": "Oct 11, 2020",
+                "demo": "https://meetfriend.glitch.me",
+                "technologies": [
+                    "html",
+                    "js",
+                    "css",
+                    "node",
+                    "socketio",
+                    "WebRTC"
+                ],
+                "type": "bed"
+            },
+            {
                 "title": "Simple text editor using window.showOpenFilePicker() API",
                 "url": "https://github.com/notshekhar/simple_text_editor/",
                 "date": "Oct 09, 2020",
