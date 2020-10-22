@@ -180,10 +180,16 @@ body {
     width: 30px;
     height: 30px;
     border: none;
-    background: white;
+    background: var(--color);
     outline: none;
     overflow: hidden;
     border-radius: 50%;
+    transition: all 200ms;
+}
+#nightmode svg {
+    transition: all 200ms;
+    fill: var(--bg-color);
+    background: var(--color);
 }
 #mode {
     display: none;
