@@ -45,6 +45,14 @@ function setMode() {
     else lightMode() //light
 }
 setMode()
+function checkMode(){
+    let match = window.matchMedia("(prefers-color-scheme: dark)").matches
+    nightMode = match
+    console.log(match)
+    if (match) {
+        darkMode()
+    }
+}
 
 document.querySelector("#nightmode").onclick = () => {
     nightMode = !nightMode
@@ -52,8 +60,5 @@ document.querySelector("#nightmode").onclick = () => {
     setMode()
 }
 
-let match = window.matchMedia("perfers-color-scheme: dark").matches
-nightMode = match
-if (match) {
-    darkMode()
-}
+window.onload = checkMode()
+
