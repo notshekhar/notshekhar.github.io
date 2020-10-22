@@ -5,15 +5,19 @@ if (localStorage.getItem("nightMode")) {
     nightMode = JSON.parse(localStorage.getItem("nightMode"))
 }
 
+function setVariable(prop, val){
+    root.style.setProperty(prop, val)
+}
+
 function darkMode() {
-    root.style.setProperty("--bg-color", "#1e1e1e")
-    root.style.setProperty("--bg1-color", "#252526")
-    root.style.setProperty("--color", "#adadad")
-    root.style.setProperty("--highlight-color", "#37373d")
-    root.style.setProperty("--border-color", "#1e1e1e")
-    root.style.setProperty("--header-color", "#1e1e1e")
-    root.style.setProperty("--link-color", "white")
-    root.style.setProperty(
+    setVariable("--bg-color", "#1e1e1e")
+    setVariable("--bg1-color", "#252526")
+    setVariable("--color", "#adadad")
+    setVariable("--highlight-color", "#37373d")
+    setVariable("--border-color", "#1e1e1e")
+    setVariable("--header-color", "#1e1e1e")
+    setVariable("--link-color", "white")
+    setVariable(
         "--shadow",
         "0 1px 3px 1px rgba(0, 0, 0, 0.51),    0 1px 2px 0 rgba(60, 64, 67, 0.3)"
     )
@@ -23,15 +27,15 @@ function darkMode() {
     document.querySelector("#mode").innerText = "Turn OFF night mode"
 }
 function lightMode() {
-    root.style.setProperty("--bg-color", "white")
-    root.style.setProperty("--bg1-color", "white")
-    root.style.setProperty("--color", "rgb(20, 20, 20)")
-    root.style.setProperty("--highlight-color", "#f2f2f2")
-    root.style.setProperty("--border-color", "white")
-    root.style.setProperty("--header-color", "#7BE4D5")
-    // root.style.setProperty("--link-color", "green")
-    root.style.setProperty("--link-color", "#ff487a")
-    root.style.setProperty(
+    setVariable("--bg-color", "white")
+    setVariable("--bg1-color", "white")
+    setVariable("--color", "rgb(20, 20, 20)")
+    setVariable("--highlight-color", "#f2f2f2")
+    setVariable("--border-color", "white")
+    setVariable("--header-color", "#7BE4D5")
+    // setVariable("--link-color", "green")
+    setVariable("--link-color", "#ff487a")
+    setVariable(
         "--shadow",
         "0 1px 3px 1px rgba(60, 64, 67, 0.15), 0 1px 2px 0 rgba(60, 64, 67, 0.3)"
     )
