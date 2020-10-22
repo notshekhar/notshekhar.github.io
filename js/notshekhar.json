@@ -3,6 +3,14 @@
         "year": 2020,
         "data": [
             {
+                "title": "Created API for fetching IP address of device",
+                "url": "https://github.com/notshekhar/express_api_getIPAddress",
+                "demo": "https://peerip.glitch.me/",
+                "date": "Oct 21, 2020",
+                "technologies": ["node", "express", "nedb"],
+                "type": "bed"
+            },
+            {
                 "title": "E-Visiting Card created using express, ejs and MySql",
                 "url": "https://github.com/notshekhar/eVisitingCard",
                 "date": "Oct 20, 2020",

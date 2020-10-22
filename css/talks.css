@@ -1,18 +1,18 @@
 @font-face {
   font-family: slasho;
-  src: url(/slasho/slasho.ttf);
+  src: url(../assets/notshekhar.ttf);
 }
 @font-face {
   font-family: acme;
-  src: url(/slasho/Acme.ttf);
+  src: url(../assets/Acme.ttf);
 }
 @font-face {
   font-family: log;
-  src: url(/slasho/Lob.ttf);
+  src: url(../assets/Lob.ttf);
 }
 @font-face {
   font-family: mono;
-  src: url(/slasho/mono.ttf)
+  src: url(../assets/mono.ttf)
 }
 body{
   font-family: slasho;
@@ -23,6 +23,40 @@ body{
   100%{
     opacity: 1;
   }
+}
+*{
+  background: var(--bg-color);
+  transition: all 400ms;
+}
+#nightmode {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: white;
+    outline: none;
+    overflow: hidden;
+    border-radius: 50%;
+}
+#nightmode svg{
+  background: white;
+}
+#mode {
+    display: none;
+    position: absolute;
+    top: 23px;
+    right: 60px;
+    padding: 3px 12px 3px 12px;
+    background: var(--color);
+    color: var(--bg1-color);
+    z-index: 3;
+    border-radius: 300px;
+    opacity: 0.8;
+}
+#nightmode:hover + #mode {
+    display: block;
 }
 .title{
   position: relative;
@@ -43,9 +77,12 @@ body{
   line-height: 10px;
   font-size: 20px;
   font-weight: bold;
+  color: var(--link-color);
+  letter-spacing: 2px;
+  word-spacing: 3px;
 }
 .click{
-  color: #ff487a;
+  color: var(--link-color);
   cursor: pointer;
   text-decoration: none;
 }
@@ -53,7 +90,7 @@ body{
   text-decoration: underline;
 }
 .thankyou{
-  color: #ff487a;
+  color: var(--link-color);
   cursor: pointer;
 }
 .body{
@@ -64,4 +101,6 @@ body{
   padding: 20px;
   width: calc(100% - 85px);
   margin-bottom: 20px;
+  border-color: var(--color);
+  color: var(--color);
 }
