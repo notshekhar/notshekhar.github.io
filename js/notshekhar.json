@@ -3,6 +3,14 @@
         "year": 2020,
         "data": [
             {
+                "title": "Created Node CLI app to initialize express server",
+                "url": "https://github.com/notshekhar/init-server",
+                "demo": "https://www.npmjs.com/package/init-express",
+                "date": "Nov 26, 2020",
+                "technologies": ["node"],
+                "type": "cc"
+            },
+            {
                 "title": "Basic todo add using vuejs-v3",
                 "url": "https://github.com/notshekhar/simple-todo-app-using-vuejs-v3",
                 "demo": "https://5z6mu.sse.codesandbox.io/",
