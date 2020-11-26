@@ -5,7 +5,7 @@
             {
                 "title": "Basic todo add using vuejs-v3",
                 "url": "https://github.com/notshekhar/simple-todo-app-using-vuejs-v3",
-                "demo": "simple-todo-app-using-vuejs-v3",
+                "demo": "https://5z6mu.sse.codesandbox.io/",
                 "date": "Nov 26, 2020",
                 "technologies": ["vuejs"],
                 "type": "fed"
