@@ -3,11 +3,19 @@
         "year": 2020,
         "data": [
             {
+                "title": "Basic todo add using vuejs-v3",
+                "url": "https://github.com/notshekhar/simple-todo-app-using-vuejs-v3",
+                "demo": "simple-todo-app-using-vuejs-v3",
+                "date": "Nov 26, 2020",
+                "technologies": ["vuejs"],
+                "type": "fed"
+            },
+            {
                 "title": "Handpose using ML5.js",
                 "url": "https://github.com/notshekhar/handposeML5",
                 "demo": "handposeML5",
                 "date": "Nov 08, 2020",
-                "technologies": ["HTMLCanvas", "ml5.js"],
+                "technologies": ["HTMLCanvas", "ml5.js", "tensorflow.js", "js"],
                 "type": "ml"
             },
             {
