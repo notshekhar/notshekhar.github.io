@@ -3,6 +3,13 @@
         "year": 2020,
         "data": [
             {
+                "title": "Trained a bot to play tic-tac-toe game using Neural Network with tensorflow.js",
+                "url": "https://github.com/notshekhar/trained-tic-tac-toe-bot-using-neuralnework-tfjs",
+                "date": "Dec 07, 2020",
+                "technologies": ["node", "tensorflow.js", "NeuralNetwork"],
+                "type": "ml"
+            },
+            {
                 "title": "Created Node CLI app to initialize express server",
                 "url": "https://github.com/notshekhar/init-server",
                 "demo": "https://www.npmjs.com/package/init-express",
