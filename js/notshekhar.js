@@ -118,7 +118,12 @@ function createElement(e, attrs) {
         const value = attrs[attr]
         if (attr == "innerText") el.innerText = value
         else if (attr == "innerHTML") el.innerHTML = value
-        else el.setAttribute(attr, value)
+        else if (attr == "styles") {
+            let styles = attrs[attr]
+            for (let style in styles) {
+                el.style[style] = styles[style]
+            }
+        } else el.setAttribute(attr, value)
     }
     return el
 }
@@ -133,9 +138,12 @@ NodeList.prototype.remove = HTMLCollection.prototype.remove = function () {
         }
     }
 }
-
 //list
 function printlist(l, type) {
+    let br = createElement("br")
+    let br1 = createElement("br")
+    let br2 = createElement("br")
+    let br3 = createElement("br")
     let li = createElement("li")
     let card = createElement("div", {
         class: "card",
@@ -149,14 +157,35 @@ function printlist(l, type) {
     let title = createElement("a", {
         target: "_blank",
         href: l.url,
+        class: "card_body_title",
         innerText: `${all_types[l.type]} #${type}: ${l.title}`,
     })
+    let techs_users = createElement("div", {
+        class: "techs_body",
+    })
+    if (l.technologies) {
+        techs_users.append(
+            createElement("span", {
+                innerHTML: "with : ",
+                class: "tech_used_title",
+            })
+        )
+        l.technologies.forEach((tech) => {
+            techs_users.append(
+                createElement("span", {
+                    class: "techs_used",
+                    innerHTML: tech,
+                })
+            )
+        })
+    }
     let demo = createElement("a")
     if (l.demo) {
         demo = createElement("a", {
             target: "_blank",
             href: l.demo,
-            innerText: "See Project",
+            class: "demo",
+            innerText: "See Demo 👆",
         })
     }
     let datetime = createElement("div", {
@@ -164,7 +193,7 @@ function printlist(l, type) {
         innerText: l.date,
     })
     list.append(title)
-    card_body.append(list, demo)
+    card_body.append(list, demo, techs_users)
     card.append(card_body, datetime)
     li.append(card)
     body.append(li)

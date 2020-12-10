@@ -14,7 +14,7 @@
                 "url": "https://github.com/notshekhar/init-server",
                 "demo": "https://www.npmjs.com/package/init-express",
                 "date": "Nov 26, 2020",
-                "technologies": ["node"],
+                "technologies": ["node", "javascript"],
                 "type": "cc"
             },
             {
