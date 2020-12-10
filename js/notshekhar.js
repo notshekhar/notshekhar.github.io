@@ -166,7 +166,7 @@ function printlist(l, type) {
     if (l.technologies) {
         techs_users.append(
             createElement("span", {
-                innerHTML: "with : ",
+                innerHTML: "With : ",
                 class: "tech_used_title",
             })
         )
@@ -174,10 +174,12 @@ function printlist(l, type) {
             techs_users.append(
                 createElement("span", {
                     class: "techs_used",
-                    innerHTML: tech,
+                    innerHTML: tech + " ",
                 })
             )
         })
+    } else {
+        techs_users = ""
     }
     let demo = createElement("a")
     if (l.demo) {
@@ -187,6 +189,8 @@ function printlist(l, type) {
             class: "demo",
             innerText: "See Demo 👆",
         })
+    } else {
+        demo = ""
     }
     let datetime = createElement("div", {
         class: "timedate",

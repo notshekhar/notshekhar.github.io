@@ -1,133 +1,296 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <script async defer src="https://buttons.github.io/buttons.js"></script>
-  <link rel="stylesheet" href="./css/notshekhar.css">
-  <link rel="shortcut icon" href="./assets/fevicon.png" />
-  <link rel="manifest" href="./assets/manifest.json">
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> -->
-  <title>notshekhar | programmer</title>
-  <script type="text/javascript">
-    //preventing from fetching from iframe
-    if (window.top !== window.self){
-      window.self.location.replace(window.top.location.href+window.self.location.href)
-    }
-    window.dataLayer = window.dataLayer || []
-  </script>
-  <script>
-    // Check that service workers are supported
-    if ('serviceWorker' in navigator) {
-      // Use the window load event to keep the page load performant
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('./sw.js');
-      });
-    }
-  </script>
-</head>
-<body>
-  <div class="bod">
-    <!-- header -->
-    <div id="header"></div>
-    <!-- profile side -->
-    <div id="profile">
-      <div>
-        <button id="nightmode"><svg viewBox="0 0 26 26" ><g><path d="M13 20.673c-.414 0-.75-.336-.75-.75V14.46c0-.414.336-.75.75-.75s.75.336.75.75v5.463c0 .414-.336.75-.75.75z"></path><path d="M13 4.5c-4.687 0-8.5 3.813-8.5 8.5 0 3.424 2.037 6.494 5.19 7.83.094.04.196.067.306.067.414 0 .75-.336.75-.75 0-.31-.188-.575-.456-.69C7.685 18.36 6 15.826 6 13c0-3.86 3.14-7 7-7s7 3.14 7 7c0 2.825-1.683 5.358-4.288 6.454-.273.112-.467.38-.467.693 0 .414.336.75.75.75.105 0 .204-.022.294-.06C19.455 19.51 21.5 16.433 21.5 13c0-4.687-3.813-8.5-8.5-8.5zM13 3c-.414 0-.75-.34-.75-.757V.757C12.25.34 12.586 0 13 0s.75.34.75.757v1.486c0 .418-.336.757-.75.757zM3 13c0 .414-.34.75-.757.75H.757C.34 13.75 0 13.414 0 13s.34-.75.757-.75h1.486c.418 0 .757.336.757.75zm23 0c0 .414-.34.75-.757.75h-1.486c-.418 0-.757-.336-.757-.75s.34-.75.757-.75h1.486c.418 0 .757.336.757.75zM5.93 5.93c-.294.292-.77.29-1.067-.006l-1.05-1.05c-.296-.296-.298-.774-.005-1.066s.77-.29 1.066.005l1.05 1.05c.295.296.298.773.005 1.066zm16.262-2.122c.293.293.29.77-.005 1.066l-1.05 1.05c-.296.296-.774.3-1.067.006s-.29-.77.005-1.066l1.05-1.05c.297-.297.775-.3 1.067-.006zM17 22.75c0 .414-.34.75-.757.75H9.757c-.418 0-.757-.336-.757-.75s.34-.75.757-.75h6.486c.418 0 .757.336.757.75zm-1 2.5c0 .414-.34.75-.757.75h-4.486c-.418 0-.757-.336-.757-.75s.34-.75.757-.75h4.486c.418 0 .757.336.757.75z"></path></g></svg></button>
-        <span id="mode">Night Mode</span>
-      </div>
-      <img src="./assets/slasho.webp" id="ppimg">
-      <div id="follow">
-        <a href="https://www.github.com/notshekhar" target="blank" class="lin"><img src="./assets/github.svg" class="fol"><span class="foltitle">Github</span></a>
-        <a href="https://glitch.com/@notshekhar" target="blank" class="lin"><img src="./assets/glitch.jpg" class="fol"><span class="foltitle">Glitch</span></a>
-        <a href="https://www.twitter.com/notshekhar" target="blank" class="lin"><img src="./assets/twit.png" class="fol"><span class="foltitle">Twitter</span></a>
-        <a href="https://www.instagram.com/notshekhar" target="blank" class="lin"><img src="./assets/insta.png" class="fol"><span class="foltitle">Instagram</span></a>
-        <a href="https://www.linkedin.com/in/notshekhar" target="blank" class="lin"><img src="./assets/linkedin.png" class="fol"><span class="foltitle">LinkedIn</span></a>
-        <a href="https://www.youtube.com/channel/UCJvnO2DyJXp_bOtHx2dAbFQ?view_as=subscriber" target="blank" class="lin"><img src="./assets/youtube.png" class="fol"><span class="foltitle">YouTube</span></a>
-        <a href="https://www.sololearn.com/Profile/12930265" target="blank" class="lin"><img src="./assets/sololearn.png" class="fol"><span class="foltitle">Sololearn</span></a>
-        <a href="https://www.freecodecamp.org/notshekhar" target="blank" class="lin"><img src="./assets/freecodecamp.png" class="fol"><span class="foltitle">Freecodecamp</span></a>
-      </div>
-      <div id="followButtons">
-        <!-- donate button -->
-        <!-- <button id="donate">Donate</button> -->
-        <!-- github follow -->
-        <a class="github-button" href="https://github.com/notshekhar" data-size="large" data-show-count="true" aria-label="Follow @ntkme on GitHub">Follow @me</a>
-        <!-- twittwr follow button -->
-        <a href="https://twitter.com/notshekhar?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @notshekhar</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-      </div>
-      <div class="topTabs">
-        <button class="h toptab" data-url="projects">Projects</button>
-        <button class="toptab" data-url="talks">Talks</button>
-        <button class="toptab"><a href="codebeat">{ codebeat } AtoZ</a></button>
-        <button class="toptab" data-url="about">About</button>
-      </div>
-    </div>
-    <!-- projects -->
-    <div id="code">
-      <span class="title">Silly projects I've done</span>
-      <div class="tabs">
-        <button class="tab" data-type="all">All</button>
-        <button class="tab" data-type="ml">Machine Learning</button>
-        <button class="tab" data-type="cc">Coding Challenges</button>
-        <button class="tab" data-type="fed">Front End Dev</button>
-        <button class="tab" data-type="bed">Back End Dev</button>
-        <button class="tab" data-type="ld">Logo Designs</button>
-      </div>
-      <div class="spacer"></div><br>
-      <span id="total"></span>
-      <div id="projects">
-        <!-- tabs -->
-      </div>
-    </div>
-    <!-- //talks -->
-    <div class="talks">
-      <div class="title">Talks</div>
-      <br><br><br>
-      <div class="talkbody"></div>
-    </div>
-    <!-- about -->
-    <div class="about">
-      <div class='title'>Hiya! I'm Shekhar</div>
-      <br><br><br>
-      <div class="aboutme">
-        <p>
-          I'm a Web developer and a Machine Learning Programmer, I do a lot of pretty silly side <span class="click" data-url='projects'>Projects</span>, mostly related to <span class="click" data-url='ml'>Machine Learning</span> and <span class="click" data-url='cc'>JavaScript</span>. 
-        </p>
-        <p>
-          I have a GitHub AMA <a class='click' href="https://www.github.com/notshekhar/ama" target="blank">repo</a> where you can ask me things, because I heard that's what the cool kids do nowadays. Or you can send me an <a href='mailto:notshekhar@gmail.com' target="blank" class="click">email</a>. Or both. You can also contact me on <a href="https://www.twitter.com/notshekhar" target="blank" class="click">Twitter</a>.
-        </p>
-        <br>
-        <br>
-        <div class="y">
-          If you're conference and you need a bio:
-        </div><br>
-        <p>
-          Shekhar is working on a Master Algorithm of Machine Learning called "webLearner". Outside of machine learning, if you have two different problems to solve, you need to write two different programs.
-          They might use some of the same infrastructure, like the same programming language or the same database system, but a
-          program to, say, play chess is of no use if you want to process credit-card applications. In machine learning, the same
-          algorithm can do both, provided you give it the appropriate data to learn from. and These Machine learning algorithms are also called learner.
-          If so few learners can do so much, the logical question is: Could one learner do everything?
-          In other words, could a single algorithm learn all that can be learned from data?
-          This is a very tall order, since it would ultimately include everything in an adult’s brain, everything evolution has
-          created, and the sum total of all scientific knowledge. But in fact all the major learners—including nearest-neighbor,
-          decision trees, and Bayesian networks, a generalization of Naïve Bayes—are universal in the following sense: if you
-          give the learner enough of the appropriate data, it can approximate any function arbitrarily closely—which is
-          math-speak for learning anything. The catch is that “enough data” could be infinite. Learning from finite data requires
-          making assumptions, as we’ll see, and different learners make different assumptions, which makes them good for some
-          things but not others.
-          All knowledge—past, present, and future—can be derived from data by a single, universal learning algorithm.
-          He call this learner WebAssembly learner.
-          He is unreasonably excited about Machine Learning, Web Fonts, Web Development, and will become your best friend if you bring him cheese. On second thought, He may be a mouse.
-          <br><br>
-          If you need a image, I recommend <a href='https://notshekhar.github.io/slasho.png' target="blank" class="click">this one</a>.
-        </p>
-        <br><br><br>
-        
-        <p class="click" style="font-family:sans-serif">THANKS FOR READING! ❤︎</p>
-      </div>
-    </div>
-  </div>
-  <div class="spinner"></div>
-  <script src="./js/notshekhar.js"></script>
-  <script src="./js/theme.js"></script>
-</body>
+    <head>
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        />
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+        <link rel="stylesheet" href="./css/notshekhar.css" />
+        <link rel="shortcut icon" href="./assets/fevicon.png" />
+        <link rel="manifest" href="./assets/manifest.json" />
+        <script src="./js/config.js"></script>
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> -->
+        <title>notshekhar | programmer</title>
+        <script type="text/javascript">
+            //preventing from fetching from iframe
+            if (window.top !== window.self) {
+                window.self.location.replace(
+                    window.top.location.href + window.self.location.href
+                )
+            }
+            window.dataLayer = window.dataLayer || []
+        </script>
+        <script>
+            // Check that service workers are supported
+            if (config.deploy == "production") {
+                if ("serviceWorker" in navigator) {
+                    // Use the window load event to keep the page load performant
+                    window.addEventListener("load", () => {
+                        navigator.serviceWorker.register("./sw.js")
+                    })
+                }
+            } else {
+                console.log("deploy mode: DEV")
+            }
+        </script>
+    </head>
+    <body>
+        <div class="bod">
+            <!-- header -->
+            <div id="header"></div>
+            <!-- profile side -->
+            <div id="profile">
+                <div>
+                    <button id="nightmode">
+                        <svg viewBox="0 0 26 26">
+                            <g>
+                                <path
+                                    d="M13 20.673c-.414 0-.75-.336-.75-.75V14.46c0-.414.336-.75.75-.75s.75.336.75.75v5.463c0 .414-.336.75-.75.75z"
+                                ></path>
+                                <path
+                                    d="M13 4.5c-4.687 0-8.5 3.813-8.5 8.5 0 3.424 2.037 6.494 5.19 7.83.094.04.196.067.306.067.414 0 .75-.336.75-.75 0-.31-.188-.575-.456-.69C7.685 18.36 6 15.826 6 13c0-3.86 3.14-7 7-7s7 3.14 7 7c0 2.825-1.683 5.358-4.288 6.454-.273.112-.467.38-.467.693 0 .414.336.75.75.75.105 0 .204-.022.294-.06C19.455 19.51 21.5 16.433 21.5 13c0-4.687-3.813-8.5-8.5-8.5zM13 3c-.414 0-.75-.34-.75-.757V.757C12.25.34 12.586 0 13 0s.75.34.75.757v1.486c0 .418-.336.757-.75.757zM3 13c0 .414-.34.75-.757.75H.757C.34 13.75 0 13.414 0 13s.34-.75.757-.75h1.486c.418 0 .757.336.757.75zm23 0c0 .414-.34.75-.757.75h-1.486c-.418 0-.757-.336-.757-.75s.34-.75.757-.75h1.486c.418 0 .757.336.757.75zM5.93 5.93c-.294.292-.77.29-1.067-.006l-1.05-1.05c-.296-.296-.298-.774-.005-1.066s.77-.29 1.066.005l1.05 1.05c.295.296.298.773.005 1.066zm16.262-2.122c.293.293.29.77-.005 1.066l-1.05 1.05c-.296.296-.774.3-1.067.006s-.29-.77.005-1.066l1.05-1.05c.297-.297.775-.3 1.067-.006zM17 22.75c0 .414-.34.75-.757.75H9.757c-.418 0-.757-.336-.757-.75s.34-.75.757-.75h6.486c.418 0 .757.336.757.75zm-1 2.5c0 .414-.34.75-.757.75h-4.486c-.418 0-.757-.336-.757-.75s.34-.75.757-.75h4.486c.418 0 .757.336.757.75z"
+                                ></path>
+                            </g>
+                        </svg>
+                    </button>
+                    <span id="mode">Night Mode</span>
+                </div>
+                <img src="./assets/slasho.webp" id="ppimg" />
+                <div id="follow">
+                    <a
+                        href="https://www.github.com/notshekhar"
+                        target="blank"
+                        class="lin"
+                        ><img src="./assets/github.svg" class="fol" /><span
+                            class="foltitle"
+                            >Github</span
+                        ></a
+                    >
+                    <a
+                        href="https://glitch.com/@notshekhar"
+                        target="blank"
+                        class="lin"
+                        ><img src="./assets/glitch.jpg" class="fol" /><span
+                            class="foltitle"
+                            >Glitch</span
+                        ></a
+                    >
+                    <a
+                        href="https://www.twitter.com/notshekhar"
+                        target="blank"
+                        class="lin"
+                        ><img src="./assets/twit.png" class="fol" /><span
+                            class="foltitle"
+                            >Twitter</span
+                        ></a
+                    >
+                    <a
+                        href="https://www.instagram.com/notshekhar"
+                        target="blank"
+                        class="lin"
+                        ><img src="./assets/insta.png" class="fol" /><span
+                            class="foltitle"
+                            >Instagram</span
+                        ></a
+                    >
+                    <a
+                        href="https://www.linkedin.com/in/notshekhar"
+                        target="blank"
+                        class="lin"
+                        ><img src="./assets/linkedin.png" class="fol" /><span
+                            class="foltitle"
+                            >LinkedIn</span
+                        ></a
+                    >
+                    <a
+                        href="https://www.youtube.com/channel/UCJvnO2DyJXp_bOtHx2dAbFQ?view_as=subscriber"
+                        target="blank"
+                        class="lin"
+                        ><img src="./assets/youtube.png" class="fol" /><span
+                            class="foltitle"
+                            >YouTube</span
+                        ></a
+                    >
+                    <a
+                        href="https://www.sololearn.com/Profile/12930265"
+                        target="blank"
+                        class="lin"
+                        ><img src="./assets/sololearn.png" class="fol" /><span
+                            class="foltitle"
+                            >Sololearn</span
+                        ></a
+                    >
+                    <a
+                        href="https://www.freecodecamp.org/notshekhar"
+                        target="blank"
+                        class="lin"
+                        ><img
+                            src="./assets/freecodecamp.png"
+                            class="fol"
+                        /><span class="foltitle">Freecodecamp</span></a
+                    >
+                </div>
+                <div id="followButtons">
+                    <!-- donate button -->
+                    <!-- <button id="donate">Donate</button> -->
+                    <!-- github follow -->
+                    <a
+                        class="github-button"
+                        href="https://github.com/notshekhar"
+                        data-size="large"
+                        data-show-count="true"
+                        aria-label="Follow @ntkme on GitHub"
+                        >Follow @me</a
+                    >
+                    <!-- twittwr follow button -->
+                    <a
+                        href="https://twitter.com/notshekhar?ref_src=twsrc%5Etfw"
+                        class="twitter-follow-button"
+                        data-show-count="false"
+                        >Follow @notshekhar</a
+                    >
+                    <script
+                        async
+                        src="https://platform.twitter.com/widgets.js"
+                        charset="utf-8"
+                    ></script>
+                </div>
+                <div class="topTabs">
+                    <button class="h toptab" data-url="projects">
+                        Projects
+                    </button>
+                    <button class="toptab" data-url="talks">Talks</button>
+                    <button class="toptab">
+                        <a href="codebeat">{ codebeat } AtoZ</a>
+                    </button>
+                    <button class="toptab" data-url="about">About</button>
+                </div>
+            </div>
+            <!-- projects -->
+            <div id="code">
+                <span class="title">Silly projects I've done</span>
+                <div class="tabs">
+                    <button class="tab" data-type="all">All</button>
+                    <button class="tab" data-type="ml">Machine Learning</button>
+                    <button class="tab" data-type="cc">
+                        Coding Challenges
+                    </button>
+                    <button class="tab" data-type="fed">Front End Dev</button>
+                    <button class="tab" data-type="bed">Back End Dev</button>
+                    <button class="tab" data-type="ld">Logo Designs</button>
+                </div>
+                <div class="spacer"></div>
+                <br />
+                <span id="total"></span>
+                <div id="projects">
+                    <!-- tabs -->
+                </div>
+            </div>
+            <!-- //talks -->
+            <div class="talks">
+                <div class="title">Talks</div>
+                <br /><br /><br />
+                <div class="talkbody"></div>
+            </div>
+            <!-- about -->
+            <div class="about">
+                <div class="title">Hiya! I'm Shekhar</div>
+                <br /><br /><br />
+                <div class="aboutme">
+                    <p>
+                        I'm a Web developer and a Machine Learning Programmer, I
+                        do a lot of pretty silly side
+                        <span class="click" data-url="projects">Projects</span>,
+                        mostly related to
+                        <span class="click" data-url="ml"
+                            >Machine Learning</span
+                        >
+                        and <span class="click" data-url="cc">JavaScript</span>.
+                    </p>
+                    <p>
+                        I have a GitHub AMA
+                        <a
+                            class="click"
+                            href="https://www.github.com/notshekhar/ama"
+                            target="blank"
+                            >repo</a
+                        >
+                        where you can ask me things, because I heard that's what
+                        the cool kids do nowadays. Or you can send me an
+                        <a
+                            href="mailto:notshekhar@gmail.com"
+                            target="blank"
+                            class="click"
+                            >email</a
+                        >. Or both. You can also contact me on
+                        <a
+                            href="https://www.twitter.com/notshekhar"
+                            target="blank"
+                            class="click"
+                            >Twitter</a
+                        >.
+                    </p>
+                    <br />
+                    <br />
+                    <div class="y">
+                        If you're conference and you need a bio:
+                    </div>
+                    <br />
+                    <p>
+                        Shekhar is working on a Master Algorithm of Machine
+                        Learning called "webLearner". Outside of machine
+                        learning, if you have two different problems to solve,
+                        you need to write two different programs. They might use
+                        some of the same infrastructure, like the same
+                        programming language or the same database system, but a
+                        program to, say, play chess is of no use if you want to
+                        process credit-card applications. In machine learning,
+                        the same algorithm can do both, provided you give it the
+                        appropriate data to learn from. and These Machine
+                        learning algorithms are also called learner. If so few
+                        learners can do so much, the logical question is: Could
+                        one learner do everything? In other words, could a
+                        single algorithm learn all that can be learned from
+                        data? This is a very tall order, since it would
+                        ultimately include everything in an adult’s brain,
+                        everything evolution has created, and the sum total of
+                        all scientific knowledge. But in fact all the major
+                        learners—including nearest-neighbor, decision trees, and
+                        Bayesian networks, a generalization of Naïve Bayes—are
+                        universal in the following sense: if you give the
+                        learner enough of the appropriate data, it can
+                        approximate any function arbitrarily closely—which is
+                        math-speak for learning anything. The catch is that
+                        “enough data” could be infinite. Learning from finite
+                        data requires making assumptions, as we’ll see, and
+                        different learners make different assumptions, which
+                        makes them good for some things but not others. All
+                        knowledge—past, present, and future—can be derived from
+                        data by a single, universal learning algorithm. He call
+                        this learner WebAssembly learner. He is unreasonably
+                        excited about Machine Learning, Web Fonts, Web
+                        Development, and will become your best friend if you
+                        bring him cheese. On second thought, He may be a mouse.
+                        <br /><br />
+                        If you need a image, I recommend
+                        <a
+                            href="https://notshekhar.github.io/slasho.png"
+                            target="blank"
+                            class="click"
+                            >this one</a
+                        >.
+                    </p>
+                    <br /><br /><br />
+
+                    <p class="click" style="font-family: sans-serif">
+                        THANKS FOR READING! ❤︎
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="spinner"></div>
+        <script src="./js/notshekhar.js"></script>
+        <script src="./js/theme.js"></script>
+    </body>
 </html>
