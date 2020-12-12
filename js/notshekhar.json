@@ -3,6 +3,24 @@
         "year": 2020,
         "data": [
             {
+                "title": "Video Calling App updated",
+                "url": "https://github.com/notshekhar/Video-Calling-App-Upgrade",
+                "date": "Dec 12, 2020",
+                "demo": "https://papermeet.herokuapp.com/",
+                "technologies": [
+                    "JavaScript",
+                    "Node",
+                    "WebRTC",
+                    "peerjs",
+                    "socket.io",
+                    "express",
+                    "ejs view-engine",
+                    "CSS",
+                    "HTML"
+                ],
+                "type": "cc"
+            },
+            {
                 "title": "Snake Game",
                 "url": "https://github.com/notshekhar/Snake-Game-",
                 "date": "Dec 10, 2020",
