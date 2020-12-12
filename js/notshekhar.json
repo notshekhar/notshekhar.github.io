@@ -10,7 +10,7 @@
                 "technologies": [
                     "JavaScript",
                     "Node",
-                    "WebRTC",
+                    "WebRTC",   
                     "peerjs",
                     "socket.io",
                     "express",
@@ -18,7 +18,7 @@
                     "CSS",
                     "HTML"
                 ],
-                "type": "cc"
+                "type": "bed"
             },
             {
                 "title": "Snake Game",
