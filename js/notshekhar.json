@@ -10,7 +10,7 @@
                 "technologies": [
                     "JavaScript",
                     "Node",
-                    "WebRTC",   
+                    "WebRTC",
                     "peerjs",
                     "socket.io",
                     "express",
