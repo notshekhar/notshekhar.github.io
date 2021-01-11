@@ -3,6 +3,14 @@
         "year": 2020,
         "data": [
             {
+                "title": "Drag Drop Image demo",
+                "url": "https://github.com/notshekhar/drag-drop-api",
+                "date": "Jan 11, 2021",
+                "demo": "drag-drop-api",
+                "technologies": ["JavaScript", "CSS", "HTML"],
+                "type": "fed"
+            },
+            {
                 "title": "Video Calling App updated",
                 "url": "https://github.com/notshekhar/Video-Calling-App-Upgrade",
                 "date": "Dec 12, 2020",
