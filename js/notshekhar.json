@@ -3,6 +3,21 @@
         "year": 2020,
         "data": [
             {
+                "title": "Admit card downloader for GBU(Gautam Buddha University)",
+                "url": "https://github.com/notshekhar/gbu_admit_card",
+                "date": "Jan 13, 2021",
+                "demo": "http://157.245.7.98/",
+                "technologies": [
+                    "JavaScript",
+                    "CSS",
+                    "HTML",
+                    "Nodejs",
+                    "Express",
+                    "Mysql"
+                ],
+                "type": "bed"
+            },
+            {
                 "title": "Drag Drop Image demo",
                 "url": "https://github.com/notshekhar/drag-drop-api",
                 "date": "Jan 11, 2021",
