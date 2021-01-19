@@ -1,6 +1,6 @@
 [
     {
-        "year": 2020,
+        "year": 2021,
         "data": [
             {
                 "title": "Admit card downloader for GBU(Gautam Buddha University)",
@@ -24,7 +24,12 @@
                 "demo": "drag-drop-api",
                 "technologies": ["JavaScript", "CSS", "HTML"],
                 "type": "fed"
-            },
+            }
+        ]
+    }
+    {
+        "year": 2020,
+        "data": [
             {
                 "title": "Video Calling App updated",
                 "url": "https://github.com/notshekhar/Video-Calling-App-Upgrade",
