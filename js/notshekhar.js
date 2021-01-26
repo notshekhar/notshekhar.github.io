@@ -245,7 +245,7 @@ function all(data) {
     // console.log(ml, cc, fed, bed, ld)
 
     data.forEach((d) => {
-        printYear(d.year, d.data.length)
+        if (d.data.length > 0) printYear(d.year, d.data.length)
         d.data.forEach((l) => {
             totalProjects++
             //Pasting projects in body
@@ -292,7 +292,7 @@ function query(type) {
             }
         })
         //printing year with no of projects
-        printYear(d.year, counter)
+        if (counter > 0) printYear(d.year, counter)
         //printing projects in that year
         d.data.forEach((l) => {
             if (l.type == type) {
