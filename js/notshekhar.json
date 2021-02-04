@@ -3,6 +3,12 @@
         "year": 2021,
         "data": [
             {
+                "title": "PaperValut logo",
+                "url": "https://github.com/notshekhar/LogoDesigns/tree/master/PaperVault",
+                "date": "Feb 04, 2021",
+                "type": "ld"
+            },
+            {
                 "title": "Admit card downloader for GBU(Gautam Buddha University)",
                 "url": "https://github.com/notshekhar/gbu_admit_card",
                 "date": "Jan 13, 2021",
