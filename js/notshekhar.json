@@ -3,6 +3,14 @@
         "year": 2021,
         "data": [
             {
+                "title": "ToDo App",
+                "url": "https://github.com/notshekhar/todo-app-using-react-and-recoiljs",
+                "date": "April 2, 2021",
+                "technologies": ["React", "Recoiljs", "CSS"],
+                "demo": "https://dsyzz.csb.app/",
+                "type": "fed"
+            },
+            {
                 "title": "P2P File Sharing WebApp",
                 "url": "https://github.com/notshekhar/P2P-File-Sharing",
                 "date": "Feb 14, 2021",
