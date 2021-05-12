@@ -7,11 +7,15 @@
         />
         <script async defer src="https://buttons.github.io/buttons.js"></script>
         <link rel="stylesheet" href="./css/notshekhar.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        />
         <link rel="shortcut icon" href="./assets/fevicon.png" />
         <link rel="manifest" href="./assets/manifest.json" />
         <script src="./js/config.js"></script>
         <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> -->
-        <title>notshekhar | programmer<script>alert("hello")</script></title>
+        <title>notshekhar | programmer</title>
         <script type="text/javascript">
             //preventing from fetching from iframe
             if (window.top !== window.self) {
@@ -62,6 +66,7 @@
                     <span id="mode">Night Mode</span>
                 </div>
                 <img src="./assets/slasho.webp" id="ppimg" />
+
                 <div id="follow">
                     <a
                         href="https://www.github.com/notshekhar"
@@ -140,14 +145,15 @@
                     <!-- donate button -->
                     <!-- <button id="donate">Donate</button> -->
                     <!-- github follow -->
+                    <!-- Place this tag where you want the button to render. -->
                     <a
                         class="github-button"
                         href="https://github.com/notshekhar"
                         data-size="large"
                         data-show-count="true"
                         aria-label="Follow @ntkme on GitHub"
-                        >Follow @me</a
-                    >
+                        >Follow @me
+                    </a>
                     <!-- twittwr follow button -->
                     <!-- <a
                         href="https://twitter.com/notshekhar?ref_src=twsrc%5Etfw"
@@ -163,13 +169,29 @@
                 </div>
                 <div class="topTabs">
                     <button class="h toptab" data-url="projects">
-                        Projects
+                        <div>
+                            <i class="fas fa-seedling"></i>
+                            <span>Projects</span>
+                        </div>
                     </button>
-                    <button class="toptab" data-url="talks">Talks</button>
+                    <button class="toptab" data-url="talks">
+                        <div>
+                            <i class="fas fa-blog"></i>
+                            <span>Talks</span>
+                        </div>
+                    </button>
                     <button class="toptab">
-                        <a href="codebeat">{ codebeat } AtoZ</a>
+                        <a href="codebeat">
+                            <i class="fas fa-terminal"></i>
+                            <span>{ codebeat } AtoZ</span>
+                        </a>
                     </button>
-                    <button class="toptab" data-url="about">About</button>
+                    <button class="toptab" data-url="about">
+                        <div>
+                            <i class="fas fa-user"></i>
+                            <span>About</span>
+                        </div>
+                    </button>
                 </div>
             </div>
             <!-- projects -->
@@ -182,7 +204,7 @@
                         Coding Challenges
                     </button>
                     <button class="tab" data-type="fed">Front End Dev</button>
-                    <button class="tab" data-type="bed">Back End Dev</button>
+                    <button class="tab" data-type="bed">Full Stack Dev</button>
                     <button class="tab" data-type="ld">Logo Designs</button>
                 </div>
                 <div class="spacer"></div>

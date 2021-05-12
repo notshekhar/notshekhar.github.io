@@ -21,12 +21,21 @@ let ml = 0,
     bed = 0,
     ld = 0
 let all_types = {
-    all: "All",
-    ml: "Machine Learning",
-    cc: "Coding Challange",
-    fed: "Front End Development",
-    bed: "Back End Development",
-    ld: "Logo Design",
+    all: { name: "All", logo: "" },
+    ml: { name: "Machine Learning", logo: '<i class="fas fa-robot"></i>' },
+    cc: {
+        name: "Coding Challange",
+        logo: '<i class="fas fa-laptop-code"></i>',
+    },
+    fed: {
+        name: "Front End Development",
+        logo: '<i class="fas fa-code"></i>',
+    },
+    bed: {
+        name: "Full Stack Development",
+        logo: '<i class="fas fa-server"></i>',
+    },
+    ld: { name: "Logo Design", logo: '<i class="fas fa-draw-polygon"></i>' },
 }
 //updating history
 history.pushState({ title: "slasho { codebeat }", page: "home" }, "home", "./")
@@ -139,7 +148,7 @@ NodeList.prototype.remove = HTMLCollection.prototype.remove = function () {
     }
 }
 //list
-function printlist(l, type) {
+function printlist(l, count) {
     let br = createElement("br")
     let br1 = createElement("br")
     let br2 = createElement("br")
@@ -158,8 +167,13 @@ function printlist(l, type) {
         target: "_blank",
         href: l.url,
         class: "card_body_title",
-        innerText: `${all_types[l.type]} #${type}: ${l.title}`,
+        innerHTML: `${all_types[l.type].logo}&nbsp;&nbsp;${
+            all_types[l.type].name
+        } #${count}: ${l.title}`,
     })
+    // let title_text = createElement("span", {
+    //     innerText: `${all_types[l.type].name} #${count}: ${l.title}`,
+    // })
     let techs_users = createElement("div", {
         class: "techs_body",
     })

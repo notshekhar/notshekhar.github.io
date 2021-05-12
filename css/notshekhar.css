@@ -164,6 +164,7 @@ body {
     left: 300px;
     margin-top: 8px;
     width: calc(100% - 300px);
+    /* box-shadow: var(--shadow); */
 }
 .tab_fixed_for_mobile {
     position: fixed;
@@ -183,7 +184,8 @@ body {
     background: var(--color);
     outline: none;
     overflow: hidden;
-    border-radius: 50%;
+    /* border-radius: 50%; */
+    border-radius: 10px;
     transition: all 200ms;
 }
 #nightmode svg {
@@ -222,24 +224,33 @@ body {
     outline: none;
     color: var(--color);
     opacity: 1;
-    border: none;
-    border-bottom: solid;
-    border-bottom-width: 4px;
     border-bottom-color: transparent;
     transition: all 250ms;
 }
 .tab:hover {
     color: var(--link-color);
+    border-bottom: solid;
     border-bottom-color: var(--link-color);
     transform: scale(0.96);
     outline: none;
 }
 .highlight {
+    position: relative;
     color: var(--link-color);
+}
+.highlight:hover {
     border: none;
-    border-bottom: solid;
-    border-bottom-color: var(--link-color);
-    border-bottom-width: 4px;
+}
+.highlight::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: var(--link-color);
+    height: 4px;
+    /* left: calc(50% - 30%); */
+    left: 0px;
 }
 #header {
     top: -8px;
@@ -265,17 +276,20 @@ body {
     width: 300px;
     height: 100%;
     min-height: 500px;
-    border: solid;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* border: solid; */
     background: var(--bg1-color);
-    border-color: #9d9d9d;
-    border-image: linear-gradient(
+    /* border-color: #9d9d9d; */
+    /* border-image: linear-gradient(
         to bottom,
         var(--border-color) 15%,
         #9d9d9d 75%,
         var(--border-color) 100%
-    );
-    border-image-slice: 1;
-    border-width: 0 1px 0 0;
+    ); */
+    /* border-image-slice: 1; */
+    /* border-width: 0 1px 0 0; */
     animation: alala 1s forwards;
     transition: all 200ms;
 }
@@ -292,47 +306,64 @@ body {
 .topTabs {
     position: relative;
     width: 100%;
-    margin-top: 350px;
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
-    height: 130px;
+    align-items: center;
+    /* height: 130px; */
 }
 
 .toptab {
     background: var(--bg1-color);
-    flex: 1;
     position: relative;
-    margin-left: 50px;
-    width: Calc(100% - 50px);
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
     outline: none;
-    border: solid;
-    font-family: acme;
-    font-size: 20px;
-    border-color: transparent;
-    border-width: 1px 0px 1px 1px;
-    border-radius: 50px 0 0 50px;
     color: var(--color);
     transition: all 200ms;
+    width: 75%;
+    border: none;
+    border-radius: 11px;
+    height: 45px;
+    margin-bottom: 10px;
+    font-family: notshekhar;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color);
 }
 .toptab:hover {
-    border-color: #bdbdbd4a;
-    margin-left: 51px;
+    margin-left: 21px;
     /* transform: scale(1.01); */
+    background: var(--highlight-color);
 }
 .h {
-    border: solid;
-    border-color: #9d9d9d;
-    border-width: 1px 0px 1px 1px;
-    margin-left: 51px;
+    /* margin-left: 51px; */
+    background-color: var(--highlight-color);
+}
+.h::after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    height: 20px;
+    width: 5px;
+    border-radius: 10px;
+    background: var(--link-color);
+}
+.toptab > * > *{
+    margin-right: 5px;
+}
+.card:first-child {
+    margin-top: 5px;
 }
 .card {
     position: relative;
     display: flex;
     flex-direction: row;
-    border-radius: 4px;
+    border-radius: 16px;
     padding: 20px;
-    box-shadow: var(--shadow);
-    margin-top: 10px;
+    /* box-shadow: var(--shadow); */
+    margin-bottom: 15px;
     margin-left: 10px;
     margin-right: 10px;
     background: var(--bg1-color);
@@ -366,15 +397,15 @@ body {
     position: relative;
     margin-top: 10px;
     width: 100%;
-    line-height: 30px;
+    line-height: 35px;
     /* overflow-y: hidden;
     overflow-x: scroll; */
 }
-.techs_body::-webkit-scrollbar {
+/* .techs_body::-webkit-scrollbar {
     width: 0px;
     overflow-y: hidden;
     overflow-x: scroll;
-}
+} */
 .techs_used {
     position: relative;
     font-size: 12px;
@@ -382,9 +413,9 @@ body {
     font-weight: 400;
     letter-spacing: 1.2px;
     color: var(--color);
-    padding: 5px 8px 5px 8px;
+    padding: 6px 8px 6px 8px;
     background-color: var(--highlight-color);
-    border-radius: 4px;
+    border-radius: 5px;
     margin-right: 10px;
     font-family: notshekhar;
     transition: all 300ms;
@@ -402,26 +433,26 @@ body {
     background-color: transparent !important;
 }
 .card:hover {
-    background: var(--highlight-color);
+    /* background: var(--highlight-color); */
     box-shadow: none;
     transform: scale(0.99);
 }
-.card:hover .techs_used {
+/* .card:hover .techs_used {
     background-color: var(--bg1-color);
-}
+} */
 #ppimg {
     width: 150px;
     height: 150px;
-    border-radius: 50%;
-    position: absolute;
-    top: 40px;
+    border-radius: 50px;
+    position: relative;
+    margin-top: 40px;
     left: 50%;
     margin-left: -75px;
     transition: all 400ms;
 }
 #ppimg:hover {
-    border-radius: 20%;
-    transform: scale(1.1);
+    /* border-radius: 20%; */
+    transform: scale(1.05);
 }
 #code {
     position: fixed;
@@ -434,6 +465,7 @@ body {
     overflow-y: scroll;
     overflow-x: hidden;
     display: none;
+    background-color: var(--bg-color);
     animation: blabla 1s forwards;
 }
 @keyframes blabla {
@@ -545,7 +577,7 @@ body {
     position: absolute;
     display: flex;
 }
-i {
+.wrap i {
     flex: 1;
     width: 8px;
     height: 20px;
@@ -583,8 +615,8 @@ a {
     transition: all 200ms;
 }
 #follow {
-    position: absolute;
-    top: 200px;
+    position: relative;
+    /* top: 200px; */
     display: flex;
     left: 50%;
     width: 200px;
@@ -599,7 +631,8 @@ a {
     position: absolute;
     width: 18px;
     height: 18px;
-    border-radius: 50%;
+    /* border-radius: 50%; */
+    border-radius: 8px;
     margin-right: 3px;
     transition: all 500ms;
     border: solid;
@@ -628,9 +661,11 @@ a {
     display: flex;
     justify-content: center;
 }
+#followButtons > span:host(.widget) {
+    width: 100px;
+}
 #followButtons {
-    position: absolute;
-    top: 250px;
+    position: relative;
     left: 50%;
     width: 136px;
     margin-left: -68px;
@@ -709,6 +744,12 @@ p {
         left: 0px;
         width: 100%;
         height: 100%;
+    }
+    #profile > .topTabs {
+        margin-top: 30px;
+    }
+    .toptab {
+        margin-bottom: 5px;
     }
     #code {
         position: absolute;
