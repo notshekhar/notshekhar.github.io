@@ -99,7 +99,7 @@ body {
     background-position: center;
     background-size: cover;
     background-size: 40px;
-    background-color: white;
+    background-color: var(--bg-color);
     z-index: 3;
 }
 

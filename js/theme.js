@@ -4,6 +4,7 @@ let nightMode = false
 if (localStorage.getItem("nightMode")) {
     nightMode = JSON.parse(localStorage.getItem("nightMode"))
 }
+// console.log(nightMode)
 
 function setVariable(root, prop, val) {
     root.style.setProperty(prop, val)
