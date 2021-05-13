@@ -1,0 +1,60 @@
+@font-face {
+  font-family: slasho;
+  src: url(/slasho/slasho.ttf);
+}
+@font-face {
+  font-family: acme;
+  src: url(/slasho/Acme.ttf);
+}
+@font-face {
+  font-family: log;
+  src: url(/slasho/Lob.ttf);
+}
+@font-face {
+  font-family: mono;
+  src: url(/slasho/mono.ttf)
+}
+body{
+  font-family: slasho;
+}
+.title{
+  position: relative;
+  margin-top: 20px;
+  font-size: 40px;
+  font-weight: 600px;
+  font-family: log;
+  display: inline-block;
+  background-image: linear-gradient(90deg, #F79533 0%, #F37055 15%, #EF4E7B 30%, #A166AB 44%, #5073B8 58%, #1098AD 72%, #07B39B 86%, #6DBA82 100%);
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.heading{
+  font-family: acme;
+  line-height: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.click{
+  color: #ff487a;
+  cursor: pointer;
+  text-decoration: none;
+}
+.click:hover{
+  text-decoration: underline;
+}
+.thankyou{
+  color: #ff487a;
+  cursor: pointer;
+}
+.body{
+  top: 20px;
+  left: 20px;
+  position: absolute;
+  border: dashed;
+  padding: 20px;
+  width: calc(100% - 85px);
+  margin-bottom: 20px;
+}
