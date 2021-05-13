@@ -25,10 +25,6 @@
     src: url(../assets/notshekhar.ttf);
 }
 @font-face {
-    font-family: acme;
-    src: url(../assets/Acme.ttf);
-}
-@font-face {
     font-family: log;
     src: url(../assets/Lob.ttf);
 }
@@ -701,7 +697,7 @@ p {
     position: relative;
     font-size: 30px;
     font-weight: bold;
-    font-family: acme;
+    font-family: notshekhar;
     display: inline-block;
     background-image: linear-gradient(
         90deg,
@@ -719,8 +715,8 @@ p {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
-    letter-spacing: 3px;
-    word-spacing: 10px;
+    /* letter-spacing: 3px; */
+    word-spacing: 8px;
 }
 .talkbody {
     position: absolute;
