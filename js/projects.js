@@ -287,3 +287,5 @@ function talkPosts() {
         })
     })
 }
+
+console.log("project")
