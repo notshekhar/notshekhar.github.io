@@ -84,17 +84,17 @@ window.onscroll = () => {
             tabHolder.classList.add("tab_fixed_for_mobile")
         } else {
             tabHolder.classList.remove("tab_fixed_for_mobile")
-        }
+        }   
     }
 }
-code.onscroll = () => {
-    let y = code.scrollTop
-    if (y >= tabHolder.offsetHeight) {
-        tabHolder.classList.add("tab_fixed")
-    } else {
-        tabHolder.classList.remove("tab_fixed")
-    }
-}
+// code.onscroll = () => {
+//     let y = code.scrollTop
+//     if (y >= tabHolder.offsetHeight) {
+//         tabHolder.classList.add("tab_fixed")
+//     } else {
+//         tabHolder.classList.remove("tab_fixed")
+//     }
+// }
 
 
 //if user is operating in mobile

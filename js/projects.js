@@ -189,7 +189,7 @@ function all(data) {
 
 function query(type) {
     let keys = Object.keys(all_types)
-    let type_text = all_types[type]
+    let type_text = all_types[type].name
     let n = 0
     data.forEach((d) => {
         d.data.forEach((l) => {
@@ -287,5 +287,3 @@ function talkPosts() {
         })
     })
 }
-
-console.log("project")

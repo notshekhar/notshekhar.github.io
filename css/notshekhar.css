@@ -142,29 +142,29 @@ body {
     }
 }
 .tabs {
+    position: sticky;
+    top: 25px;
     margin-top: 30px;
-    margin-left: 1px;
-    position: relative;
-    width: 100%;
+    margin-left: 15px;
+    width: calc(100% - 30px);
     height: 0px;
     display: flex;
     border: none;
+    border-radius: 21px;
     opacity: 0;
     z-index: 3;
+    background-color: var(--bg1-color);
+    border: 0.1px solid var(--highlight-color);
     animation: glagla 1s forwards;
 }
-.tab_fixed {
+/* .tab_fixed {
     position: fixed;
-    background: var(--bg1-color);
     top: 0px;
-    left: 300px;
     margin-top: 8px;
-    width: calc(100% - 300px);
-    /* box-shadow: var(--shadow); */
-}
+    width: calc(100% - 325px);
+} */
 .tab_fixed_for_mobile {
     position: fixed;
-    background: var(--bg1-color);
     top: 0px;
     left: 0px;
     margin-top: 8px;
@@ -225,8 +225,7 @@ body {
 }
 .tab:hover {
     color: var(--link-color);
-    border-bottom: solid;
-    border-bottom-color: var(--link-color);
+    /* border-bottom: solid; */
     transform: scale(0.96);
     outline: none;
 }
@@ -234,19 +233,20 @@ body {
     position: relative;
     color: var(--link-color);
 }
-.highlight:hover {
+/* .highlight:hover {
     border: none;
-}
+} */
 .highlight::after {
     content: "";
     position: absolute;
-    bottom: 0px;
-    width: 100%;
-    border-radius: 10px;
-    background-color: var(--link-color);
-    height: 4px;
-    /* left: calc(50% - 30%); */
-    left: 0px;
+    background-color: var(--bg-color);
+    top: calc(50% - 42.5%);
+    left: calc(50% - 42.5%);
+    width: 85%;
+    height: 85%;
+    z-index: -10;
+    border-radius: 21px;
+    transition: all 300ms;
 }
 #header {
     top: -8px;
@@ -266,28 +266,19 @@ body {
 }
 #profile {
     position: fixed;
-    top: 0px;
+    top: 25px;
     left: -300px;
     opacity: 0;
     width: 300px;
-    height: 100%;
+    height: calc(100% - 50px);
     min-height: 500px;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    /* border: solid; */
     background: var(--bg1-color);
-    /* border-color: #9d9d9d; */
-    /* border-image: linear-gradient(
-        to bottom,
-        var(--border-color) 15%,
-        #9d9d9d 75%,
-        var(--border-color) 100%
-    ); */
-    /* border-image-slice: 1; */
-    /* border-width: 0 1px 0 0; */
     animation: alala 1s forwards;
     transition: all 200ms;
+    border-radius: 21px;
 }
 @keyframes alala {
     0% {
@@ -296,7 +287,7 @@ body {
     }
     100% {
         opacity: 1;
-        left: 0px;
+        left: 25px;
     }
 }
 .topTabs {
@@ -346,7 +337,7 @@ body {
     border-radius: 10px;
     background: var(--link-color);
 }
-.toptab > * > *{
+.toptab > * > * {
     margin-right: 5px;
 }
 .card:first-child {
@@ -457,7 +448,7 @@ body {
     top: 0px;
     height: 100%;
     right: 0px;
-    width: calc(100% - 300px);
+    width: calc(100% - 325px);
     overflow-y: scroll;
     overflow-x: hidden;
     display: none;
@@ -471,7 +462,7 @@ body {
     }
     100% {
         opacity: 1;
-        left: 300px;
+        left: 325px;
     }
 }
 .about {
@@ -740,6 +731,17 @@ p {
         left: 0px;
         width: 100%;
         height: 100%;
+        border-radius: 0px;
+    }
+    @keyframes alala {
+        0% {
+            opacity: 0;
+            left: -300px;
+        }
+        100% {
+            opacity: 1;
+            left: 0px;
+        }
     }
     #profile > .topTabs {
         margin-top: 30px;
@@ -756,6 +758,19 @@ p {
         opacity: 1;
         overflow: visible;
         animation: none;
+    }
+    .tabs{
+        border-radius: 0px;
+        margin-left: 0px;
+        width: 100%;
+        border: none;
+    }
+    .highlight::after{
+        border-radius: 0px;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
     }
     .about {
         position: absolute;
