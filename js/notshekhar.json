@@ -3,6 +3,14 @@
         "year": 2021,
         "data": [
             {
+                "title": "Particle Effect JS",
+                "url": "https://github.com/notshekhar/particle_effect",
+                "date": "May 28, 2021",
+                "technologies": ["HTMLCanvas", "Javascript"],
+                "demo": "particle_effect",
+                "type": "cc"
+            },
+            {
                 "title": "ToDo App",
                 "url": "https://github.com/notshekhar/todo-app-using-react-and-recoiljs",
                 "date": "April 2, 2021",
