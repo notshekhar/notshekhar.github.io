@@ -13,6 +13,7 @@ fetch("./js/notshekhar.json")
         document.querySelector(".bod").style.display = "block"
         data = e
         all(data)
+        setObserver()
         //highlighting tabs
         for (let i = 0; i < tab.length; i++) {
             if (i == highlight) {
@@ -272,7 +273,6 @@ for (let i = 0; i < toptabs.length; i++) {
     }
 }
 
-
 //posting talks
 function talkPosts() {
     talkdata.forEach((data) => {
@@ -285,5 +285,30 @@ function talkPosts() {
                 talkbody.innerHTML += `<li><div class="card"><div class="list">${d.title}-{ ${d.date} }</div><a target="blank" href="${d.url}" class='show'>&#9757; Video</a></div></li>`
             }
         })
+    })
+}
+
+//intersection observer
+async function setObserver() {
+    let elements = document.querySelectorAll(".card")
+    console.log(elements)
+    const options = {
+        // threshold: 1,
+    }
+    const appearOnScroll = new IntersectionObserver(function (
+        entries,
+        appearOnScroll
+    ) {
+        entries.forEach((entry) => {
+            if (!entry.isIntersecting) return
+            entry.target.classList.add("show")
+            entry.target.classList.add("animate__animated")
+            entry.target.classList.add("animate__bounceIn")
+            appearOnScroll.unobserve(entry.target)
+        })
+    },
+    options)
+    elements.forEach((el) => {
+        appearOnScroll.observe(el)
     })
 }

@@ -356,6 +356,9 @@ body {
     background: var(--bg1-color);
     transition: all 400ms;
 }
+/* .show {
+    display: flex;
+} */
 .timedate {
     color: var(--color);
     display: flex;
@@ -648,6 +651,7 @@ p {
     line-height: 26px;
     /* word-spacing: 4px; */
 }
+
 .y {
     position: relative;
     font-size: 30px;

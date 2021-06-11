@@ -3,6 +3,13 @@
         "year": 2021,
         "data": [
             {
+                "title": "Perceptron.js",
+                "url": "https://github.com/notshekhar/perceptron.js",
+                "date": "May 28, 2021",
+                "technologies": ["Javascript"],
+                "type": "ml"
+            },
+            {
                 "title": "Particle Effect JS",
                 "url": "https://github.com/notshekhar/particle_effect",
                 "date": "May 28, 2021",
