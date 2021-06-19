@@ -3,6 +3,14 @@
         "year": 2021,
         "data": [
             {
+                "title": "Face, Expression, and Face Landmark detector",
+                "url": "https://github.com/notshekhar/Face-Detection",
+                "date": "June 19, 2021",
+                "technologies": ["Javascript", "face-api.js"],
+                "demo": "Face-Detection",
+                "type": "ml"
+            },
+            {
                 "title": "Perceptron.js",
                 "url": "https://github.com/notshekhar/perceptron.js",
                 "date": "June 11, 2021",
