@@ -3,7 +3,7 @@
         "year": 2021,
         "data": [
             {
-                "title": "Face, Expression, and Face Landmark detector",
+                "title": "Face, Expression, and Face Landmarks detector",
                 "url": "https://github.com/notshekhar/Face-Detection",
                 "date": "June 19, 2021",
                 "technologies": ["Javascript", "face-api.js"],
