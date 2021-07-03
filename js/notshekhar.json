@@ -3,6 +3,14 @@
         "year": 2021,
         "data": [
             {
+                "title": "Simple XML Parser",
+                "url": "https://github.com/notshekhar/XML-parser",
+                "date": "July 3, 2021",
+                "technologies": ["Javascript", "node"],
+                "demo": "https://www.npmjs.com/package/xmlparser2",
+                "type": "ml"
+            },
+            {
                 "title": "Face, Expression, and Face Landmarks detector",
                 "url": "https://github.com/notshekhar/Face-Detection",
                 "date": "June 19, 2021",
