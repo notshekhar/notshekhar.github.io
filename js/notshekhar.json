@@ -3,6 +3,21 @@
         "year": 2021,
         "data": [
             {
+                "title": "Simple Note Application",
+                "url": "https://github.com/notshekhar/NoteApp",
+                "date": "July 3, 2021",
+                "technologies": [
+                    "Javascript",
+                    "node",
+                    "Reactjs",
+                    "Recoiljs",
+                    "CSS",
+                    "express"
+                ],
+                "demo": "NoteApp",
+                "type": "bed"
+            },
+            {
                 "title": "Simple XML Parser",
                 "url": "https://github.com/notshekhar/XML-parser",
                 "date": "July 3, 2021",
