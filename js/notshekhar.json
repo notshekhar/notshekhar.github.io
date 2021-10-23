@@ -3,6 +3,22 @@
         "year": 2021,
         "data": [
             {
+                "title": "Ticket Booking App",
+                "url": "https://github.com/notshekhar/ticket_booking",
+                "date": "23 Oct, 2021",
+                "technologies": [
+                    "Javascript",
+                    "node",
+                    "Reactjs",
+                    "Recoiljs",
+                    "CSS",
+                    "express",
+                    "MongoDB"
+                ],
+                "demo": "https://railway-booking-portal.vercel.app/",
+                "type": "bed"
+            },
+            {
                 "title": "Simple Note Application",
                 "url": "https://github.com/notshekhar/NoteApp",
                 "date": "July 12, 2021",
