@@ -22,7 +22,7 @@ const light = {
     "--highlight-color": "#f2f2f2",
     "--border-color": "white",
     "--header-color": "#7BE4D5",
-    "--link-color": "#FF6464",
+    "--link-color": "#00ccc0",
     "--shadow":
         "0 1px 3px 1px rgba(60, 64, 67, 0.15), 0 1px 2px 0 rgba(60, 64, 67, 0.3)",
 }
