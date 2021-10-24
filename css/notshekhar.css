@@ -174,20 +174,23 @@ body {
     position: absolute;
     top: 20px;
     right: 20px;
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     border: none;
-    background: var(--color);
+    background: var(--link-color);
     outline: none;
     overflow: hidden;
-    /* border-radius: 50%; */
-    border-radius: 10px;
+    border-radius: 8px;
     transition: all 200ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #nightmode svg {
     transition: all 200ms;
     fill: var(--bg-color);
-    background: var(--color);
+    /* stroke: var(--bg-color); */
+    /* background: var(--color); */
 }
 #mode {
     display: none;
@@ -198,7 +201,8 @@ body {
     background: var(--color);
     color: var(--bg1-color);
     z-index: 3;
-    border-radius: 300px;
+    border-radius: 5px;
+    padding: 3px 10px;
     opacity: 0.8;
 }
 #nightmode:hover + #mode {
@@ -214,7 +218,7 @@ body {
 .tab {
     flex: 1;
     font-family: notshekhar, "sans-serif";
-    font-size: 15px;
+    font-size: 14px;
     background: rgba(0, 0, 0, 0);
     border: none;
     outline: none;
