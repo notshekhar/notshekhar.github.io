@@ -1,28 +1,28 @@
 //fetching talks
-fetch("./js/talks.json")
-    .then((d) => d.json())
-    .then((data) => {
-        talkdata = data
-        talkPosts()
-    })
-//fetching notshekhar data
-fetch("./js/notshekhar.json")
-    .then((d) => d.json())
-    .then((e) => {
-        spinner.style.display = "none"
-        document.querySelector(".bod").style.display = "block"
-        data = e
-        all(data)
-        setObserver()
-        //highlighting tabs
-        for (let i = 0; i < tab.length; i++) {
-            if (i == highlight) {
-                tab[i].classList.add("highlight")
-            } else {
-                tab[i].classList.remove("highlight")
-            }
+
+; (async function init() {
+    let res1 = await fetch("./js/talks.json")
+    let res2 = await fetch("./js/notshekhar.json")
+    await fetch("../assets/loading.svg")
+    await fetch("../assets/loading.svg")
+    await fetch("../assets/Lob.ttf")
+    await fetch("../assets/notshekhar.ttf")
+    talkdata = await res1.json()
+    data = await res2.json()
+    spinner.style.display = "none"
+    document.querySelector(".bod").style.display = "block"
+    all(data)
+    setObserver()
+
+    //highlighting tabs
+    for (let i = 0; i < tab.length; i++) {
+        if (i == highlight) {
+            tab[i].classList.add("highlight")
+        } else {
+            tab[i].classList.remove("highlight")
         }
-    })
+    }
+})()
 
 //for creating new element
 function createElement(e, attrs) {

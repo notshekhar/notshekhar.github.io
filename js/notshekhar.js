@@ -86,7 +86,7 @@ window.onscroll = () => {
             tabHolder.classList.add("tab_fixed_for_mobile")
         } else {
             tabHolder.classList.remove("tab_fixed_for_mobile")
-        }   
+        }
     }
 }
 // code.onscroll = () => {
