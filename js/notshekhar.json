@@ -3,6 +3,14 @@
         "year": 2021,
         "data": [
             {
+                "title": "Simple Paint App",
+                "url": "https://github.com/notshekhar/Paint-App",
+                "date": "Oct 24, 2021",
+                "technologies": ["Javascript", "CSS", "HTML"],
+                "demo": "Paint-App",
+                "type": "fed"
+            },
+            {
                 "title": "Ticket Booking App",
                 "url": "https://github.com/notshekhar/ticket_booking",
                 "date": "Oct 23, 2021",

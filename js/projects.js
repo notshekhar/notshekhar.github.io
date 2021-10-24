@@ -71,9 +71,8 @@ function printlist(l, count) {
         target: "_blank",
         href: l.url,
         class: "card_body_title",
-        innerHTML: `${all_types[l.type].logo}&nbsp;&nbsp;${
-            all_types[l.type].name
-        } #${count}: ${l.title}`,
+        innerHTML: `${all_types[l.type].logo}&nbsp;&nbsp;${all_types[l.type].name
+            } #${count}: ${l.title}`,
     })
     // let title_text = createElement("span", {
     //     innerText: `${all_types[l.type].name} #${count}: ${l.title}`,
@@ -105,7 +104,7 @@ function printlist(l, count) {
             target: "_blank",
             href: l.demo,
             class: "demo",
-            innerText: "See Demo 👆",
+            innerHTML: `${demoIcon}See Demo`,
         })
     } else {
         demo = ""
@@ -144,7 +143,7 @@ function printYear(y, n) {
 //all data
 function all(data) {
     //getting number of ml and cc and fed and bed and ld projects
-    ;(ml = 0), (cc = 0), (fed = 0), (bed = 0), (ld = 0)
+    ; (ml = 0), (cc = 0), (fed = 0), (bed = 0), (ld = 0)
     data.forEach((d) => {
         d.data.forEach((l) => {
             if (l.type == "ml") {
@@ -307,7 +306,7 @@ async function setObserver() {
             appearOnScroll.unobserve(entry.target)
         })
     },
-    options)
+        options)
     elements.forEach((el) => {
         appearOnScroll.observe(el)
     })
