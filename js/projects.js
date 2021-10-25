@@ -1,9 +1,9 @@
 //fetching talks
 
 ; (async function init() {
+    await fetch("../assets/loading.svg")
     let res1 = await fetch("./js/talks.json")
     let res2 = await fetch("./js/notshekhar.json")
-    await fetch("../assets/loading.svg")
     await fetch("../assets/loading.svg")
     await fetch("../assets/Lob.ttf")
     await fetch("../assets/notshekhar.ttf")
