@@ -236,6 +236,7 @@ body {
     outline: none;
     color: var(--color);
     opacity: 1;
+    padding: 0px 25px;
     border-bottom-color: transparent;
     transition: all 250ms;
 }
