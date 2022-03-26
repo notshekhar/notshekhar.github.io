@@ -48,6 +48,7 @@ body {
     left: 50%;
     top: 0px;
     transform: translate(-50%);
+    overflow-y: scroll;
 }
 #donate {
     background: white;
@@ -500,6 +501,13 @@ body {
         top: 70px;
         opacity: 1;
     }
+}
+*::-webkit-scrollbar {
+    width: 4px;
+}
+*::-webkit-scrollbar-thumb {
+    border-radius: 30px;
+    background: var(--link-color);
 }
 .container::-webkit-scrollbar {
     width: 4px;
