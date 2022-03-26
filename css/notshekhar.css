@@ -21,6 +21,14 @@
   0 1px 2px 0 rgba(60, 64, 67, 0.3);
 } */
 @font-face {
+    font-family: Roobert-Medium;
+    src: url(../assets/fonts/Roobert-Medium.otf);
+}
+@font-face {
+    font-family: Roobert-Bold;
+    src: url(../assets/fonts/Roobert-Bold.otf);
+}
+@font-face {
     font-family: notshekhar;
     src: url(../assets/notshekhar.ttf);
 }
@@ -29,7 +37,7 @@
     src: url(../assets/Lob.ttf);
 }
 body {
-    font-family: notshekhar, "sans-serif";
+    font-family: Roobert-Medium, "sans-serif";
     background: var(--bg-color);
 }
 .bod {
@@ -221,8 +229,7 @@ body {
     }
 }
 .tab {
-    flex: 1;
-    font-family: notshekhar, "sans-serif";
+    font-family: Roobert-Bold;
     font-size: 14px;
     background: rgba(0, 0, 0, 0);
     border: none;
@@ -317,7 +324,7 @@ body {
     border-radius: 11px;
     height: 45px;
     margin-bottom: 10px;
-    font-family: notshekhar, "sans-serif";
+    font-family: Roobert-Bold, "sans-serif";
     font-size: 16px;
     font-weight: 600;
     color: var(--color);
@@ -365,11 +372,9 @@ body {
 .timedate {
     color: var(--color);
     display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100px;
-    font-style: italic;
-    font-weight: 100;
+    font-size: 14px;
+    font-family: Roobert-Medium;
 }
 .card_body {
     position: relative;
@@ -379,6 +384,7 @@ body {
 .card_body_title {
     position: relative;
     font-size: 16px;
+    font-family: Roobert-Bold;
 }
 .demo {
     position: relative;
@@ -389,20 +395,15 @@ body {
     align-items: center;
     padding-left: 10px;
     gap: 5px;
+    font-family: Roobert-Bold;
+    font-size: 16px;
 }
 .techs_body {
     position: relative;
     margin-top: 10px;
     width: 100%;
     line-height: 35px;
-    /* overflow-y: hidden;
-    overflow-x: scroll; */
 }
-/* .techs_body::-webkit-scrollbar {
-    width: 0px;
-    overflow-y: hidden;
-    overflow-x: scroll;
-} */
 .techs_used {
     position: relative;
     font-size: 12px;
