@@ -1,5 +1,18 @@
 [
     {
+        "year": "2024",
+        "data": [
+            {
+                "title": "Rain Simulation",
+                "url": "https://github.com/notshekhar/Rain-Simulation",
+                "date": "May 27, 2024",
+                "technologies": ["JavaScript", "Canvas", "HTML"],
+                "demo": "https://notshekhar.github.io/Rain-Simulation",
+                "type": "cc"
+            }
+        ]
+    },
+    {
         "year": 2021,
         "data": [
             {
