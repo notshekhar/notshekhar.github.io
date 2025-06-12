@@ -1,5 +1,17 @@
 [
     {
+        "year": "2025",
+        "data": [
+            {
+                "title": "Boxhead - AI Chat App",
+                "url": "https://github.com/notshekhar/boxhead",
+                "date": "June 12, 2025",
+                "type": "ml",
+                "technologies": ["Nextjs", "ai-sdk", "React", "Typescript"],
+            }
+        ]
+    },
+    {
         "year": "2024",
         "data": [
             {
