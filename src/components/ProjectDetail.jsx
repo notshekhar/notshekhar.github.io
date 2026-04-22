@@ -190,13 +190,18 @@ function ProjectDetail() {
               remarkPlugins={[remarkGfm]}
               components={{
                 code({ node, inline, className, children, ...props }) {
-                  return inline ? (
+                  const isBlock =
+                    inline === false ||
+                    (className && /language-/.test(className)) ||
+                    (typeof children?.[0] === 'string' && children[0].includes('\n'))
+                  return isBlock ? (
                     <code className={className} {...props}>{children}</code>
                   ) : (
-                    <pre className="code-block-content">
-                      <code className={className} {...props}>{children}</code>
-                    </pre>
+                    <code className={`inline-code ${className || ''}`} {...props}>{children}</code>
                   )
+                },
+                pre({ children, ...props }) {
+                  return <pre className="code-block-content" {...props}>{children}</pre>
                 }
               }}
             >

@@ -3,8 +3,44 @@
 
 export const projectsRaw = [
     {
+        year: "2026",
+        data: [
+            {
+                title: "SQLBot - AI SQL Assistant",
+                date: "Jan 15, 2026",
+                updated: "Jan 15, 2026",
+                type: "ml",
+                technologies: [
+                    "Typescript",
+                    "Node.js",
+                    "LLM",
+                    "SQL",
+                    "CLI",
+                    "npm",
+                ],
+                demo: "https://www.oboe.chat/sqlbot",
+                detailSlug: "sqlbot",
+            },
+        ],
+    },
+    {
         year: "2025",
         data: [
+            {
+                title: "Oboe - AI Workspace",
+                date: "Dec 23, 2025",
+                updated: "Dec 23, 2025",
+                type: "ml",
+                technologies: [
+                    "Bun",
+                    "Nextjs",
+                    "React",
+                    "Typescript",
+                    "LLM",
+                    "ai-sdk",
+                ],
+                demo: "https://www.oboe.chat/",
+            },
             {
                 title: "Boxhead - AI Chat App",
                 url: "https://github.com/notshekhar/boxhead",

@@ -12,7 +12,10 @@ import {
   FiDownload,
   FiClock,
   FiHexagon,
-  FiDatabase
+  FiDatabase,
+  FiCopy,
+  FiCheck,
+  FiTerminal
 } from 'react-icons/fi'
 import {
   SiReact,
@@ -297,10 +300,23 @@ const filterValues = ['all', 'ml', 'bed', 'fed', 'cc', 'ld']
 
 function Projects() {
   const [projects, setProjects] = useState([])
+  const [copied, setCopied] = useState(false)
   const [currentFilter, setCurrentFilter] = useQueryState(
     'tab',
     parseAsStringLiteral(filterValues).withDefault('all')
   )
+
+  const installCommand = 'npm i -g sqlbot'
+
+  const handleCopy = async () => {
+    try {
+      await navigator.clipboard.writeText(installCommand)
+      setCopied(true)
+      setTimeout(() => setCopied(false), 1800)
+    } catch {
+      setCopied(false)
+    }
+  }
 
   useEffect(() => {
     // Load projects from markdown files
@@ -314,7 +330,7 @@ function Projects() {
     return projects.map(p => ({
       ...p,
       year: new Date(p.date).getFullYear().toString(),
-      url: p.github || p.demo
+      url: p.github
     }))
   }, [projects])
 
@@ -337,6 +353,13 @@ function Projects() {
   }, [groupedProjects])
 
   const totalProjects = allProjects.length
+  const latestYear = useMemo(() => {
+    const years = allProjects
+      .map(p => new Date(p.updated || p.date).getFullYear())
+      .filter(y => !Number.isNaN(y))
+    return years.length ? Math.max(...years) : new Date().getFullYear()
+  }, [allProjects])
+  const totalRounded = Math.max(10, Math.floor(totalProjects / 10) * 10)
 
   return (
     <section id="projects" className="section active">
@@ -348,11 +371,11 @@ function Projects() {
         <div className="model-meta">
           <span className="meta-item meta-projects">
             <FiDownload size={14} />
-            {totalProjects}+ Projects
+            {totalRounded}+ Projects
           </span>
           <span className="meta-item meta-updated">
             <FiClock size={14} />
-            Updated 2025
+            Updated {latestYear}
           </span>
         </div>
         <p className="model-description">
@@ -370,31 +393,56 @@ function Projects() {
         </div>
       </div>
 
-      {/* Code Block Style */}
+      {/* Terminal install block */}
       <div className="code-block">
         <div className="code-header">
-          <button className="code-tab active">CLI</button>
-          <button className="code-tab">cURL</button>
-          <button className="code-tab">Python</button>
-          <button className="code-tab">JavaScript</button>
+          <div className="code-dots" aria-hidden="true">
+            <span className="code-dot code-dot-red"></span>
+            <span className="code-dot code-dot-yellow"></span>
+            <span className="code-dot code-dot-green"></span>
+          </div>
+          <div className="code-title">
+            <FiTerminal size={13} />
+            <span>zsh — install</span>
+          </div>
+          <button
+            className={`code-copy ${copied ? 'copied' : ''}`}
+            onClick={handleCopy}
+            aria-label={copied ? 'Copied' : 'Copy command'}
+            title={copied ? 'Copied!' : 'Copy'}
+          >
+            {copied ? <FiCheck size={14} /> : <FiCopy size={14} />}
+            <span>{copied ? 'Copied' : 'Copy'}</span>
+          </button>
         </div>
         <div className="code-content">
-          <pre>ollama run notshekhar</pre>
+          <pre>
+            <span className="code-prompt">$</span>
+            <span className="code-cmd">npm</span>
+            <span className="code-flag">i -g</span>
+            <a href="https://www.oboe.chat/sqlbot" target="_blank" rel="noopener noreferrer" className="code-link">
+              sqlbot
+              <FiExternalLink size={11} />
+            </a>
+          </pre>
         </div>
       </div>
 
-      {/* Filter Tags */}
-      <div className="filter-tags">
+      {/* Filter Tabs */}
+      <div className="filter-tabs" role="tablist">
         {filterTags.map(tag => {
           const Icon = tag.icon
+          const isActive = currentFilter === tag.id
           return (
             <button
               key={tag.id}
-              className={`tag tag-default ${currentFilter === tag.id ? 'active' : ''}`}
+              role="tab"
+              aria-selected={isActive}
+              className={`filter-tab ${isActive ? 'active' : ''}`}
               onClick={() => setCurrentFilter(tag.id)}
             >
-              <Icon size={14} style={{ color: currentFilter === tag.id ? 'inherit' : tag.color }} />
-              {tag.label}
+              <Icon size={14} style={{ color: isActive ? tag.color : 'currentColor' }} />
+              <span>{tag.label}</span>
             </button>
           )
         })}
@@ -478,15 +526,17 @@ function ProjectCard({ project }) {
                 Details
               </Link>
             )}
-            <a
-              href={project.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="project-link"
-            >
-              <FiExternalLink size={14} />
-              View
-            </a>
+            {project.url && (
+              <a
+                href={project.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-link"
+              >
+                <FiExternalLink size={14} />
+                View
+              </a>
+            )}
             {project.demo && (
               <a
                 href={project.demo}
