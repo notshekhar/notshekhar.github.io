@@ -1,6 +1,6 @@
 import { useState, useEffect, useMemo } from 'react'
-import { Link } from 'react-router-dom'
 import { useQueryState, parseAsStringLiteral } from 'nuqs'
+import { useRouter } from '../router'
 import {
   FiFolder,
   FiCpu,
@@ -299,6 +299,7 @@ function getTechConfig(tech) {
 const filterValues = ['all', 'ml', 'bed', 'fed', 'cc', 'ld']
 
 function Projects() {
+  const { navigate } = useRouter()
   const [projects, setProjects] = useState([])
   const [copied, setCopied] = useState(false)
   const [currentFilter, setCurrentFilter] = useQueryState(
@@ -518,13 +519,14 @@ function ProjectCard({ project }) {
         <div className="project-meta">
           <div className="project-links">
             {project.detailsIncluded && (
-              <Link
-                to={`/project/${project.slug}`}
+              <a
+                href={`/?p=project&slug=${project.slug}`}
+                onClick={e => { e.preventDefault(); navigate('project', project.slug) }}
                 className="project-link project-link-details"
               >
                 <FiExternalLink size={14} />
                 Details
-              </Link>
+              </a>
             )}
             {project.url && (
               <a

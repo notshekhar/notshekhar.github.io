@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
-import { Link, NavLink } from 'react-router-dom'
 import { FiGithub, FiMoon, FiSun, FiMenu, FiX } from 'react-icons/fi'
+import { useRouter } from '../router'
 
 const FOLLOWERS_CACHE_KEY = 'gh_followers_notshekhar'
 const FOLLOWERS_TTL_MS = 6 * 60 * 60 * 1000
@@ -14,6 +14,7 @@ function formatCount(n) {
 function Header({ theme, onThemeToggle }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [followers, setFollowers] = useState(null)
+  const { page, navigate } = useRouter()
 
   useEffect(() => {
     let cancelled = false
@@ -34,10 +35,7 @@ function Header({ theme, onThemeToggle }) {
         if (!data || cancelled) return
         setFollowers(data.followers)
         try {
-          localStorage.setItem(
-            FOLLOWERS_CACHE_KEY,
-            JSON.stringify({ count: data.followers, ts: Date.now() })
-          )
+          localStorage.setItem(FOLLOWERS_CACHE_KEY, JSON.stringify({ count: data.followers, ts: Date.now() }))
         } catch {}
       })
       .catch(() => {})
@@ -46,13 +44,15 @@ function Header({ theme, onThemeToggle }) {
   }, [])
 
   const navItems = [
-    { id: 'projects', label: 'Projects', path: '/' },
-    { id: 'blog', label: 'Blog', path: '/blog' },
-    { id: 'about', label: 'About', path: '/about' }
+    { id: 'projects', label: 'Projects', page: '' },
+    { id: 'blog', label: 'Blog', page: 'blog' },
+    { id: 'about', label: 'About', page: 'about' },
   ]
 
-  const handleMobileNavClick = () => {
+  const handleNav = (e, navPage) => {
+    e.preventDefault()
     setMobileMenuOpen(false)
+    navigate(navPage)
   }
 
   return (
@@ -60,23 +60,24 @@ function Header({ theme, onThemeToggle }) {
       <header className="header">
         <div className="header-inner">
           <div className="header-left">
-            <Link to="/" className="logo">
+            <a href="/" onClick={e => handleNav(e, '')} className="logo">
               <svg className="logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect className="logo-bg" width="32" height="32" rx="8" fill="currentColor"/>
                 <path className="logo-fg" d="M8 12C8 10.8954 8.89543 10 10 10H14C15.1046 10 16 10.8954 16 12V20C16 21.1046 15.1046 22 14 22H10C8.89543 22 8 21.1046 8 20V12Z"/>
                 <path className="logo-fg logo-fg-muted" d="M18 14C18 12.8954 18.8954 12 20 12H22C23.1046 12 24 12.8954 24 14V20C24 21.1046 23.1046 22 22 22H20C18.8954 22 18 21.1046 18 20V14Z"/>
               </svg>
               <span>Shekhar</span>
-            </Link>
+            </a>
             <nav className="nav">
               {navItems.map(item => (
-                <NavLink
+                <a
                   key={item.id}
-                  to={item.path}
-                  className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
+                  href={item.page ? `/?p=${item.page}` : '/'}
+                  onClick={e => handleNav(e, item.page)}
+                  className={`nav-link ${page === item.page ? 'active' : ''}`}
                 >
                   {item.label}
-                </NavLink>
+                </a>
               ))}
             </nav>
           </div>
@@ -94,11 +95,7 @@ function Header({ theme, onThemeToggle }) {
                 <span className="github-follow-count">{formatCount(followers)}</span>
               )}
             </a>
-            <button
-              className="theme-toggle"
-              onClick={onThemeToggle}
-              aria-label="Toggle theme"
-            >
+            <button className="theme-toggle" onClick={onThemeToggle} aria-label="Toggle theme">
               {theme === 'dark' ? <FiSun size={18} /> : <FiMoon size={18} />}
             </button>
             <button
@@ -112,17 +109,16 @@ function Header({ theme, onThemeToggle }) {
         </div>
       </header>
 
-      {/* Mobile Navigation */}
       <nav className={`mobile-nav ${mobileMenuOpen ? 'open' : ''}`}>
         {navItems.map(item => (
-          <NavLink
+          <a
             key={item.id}
-            to={item.path}
-            className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
-            onClick={handleMobileNavClick}
+            href={item.page ? `/?p=${item.page}` : '/'}
+            onClick={e => handleNav(e, item.page)}
+            className={`nav-link ${page === item.page ? 'active' : ''}`}
           >
             {item.label}
-          </NavLink>
+          </a>
         ))}
       </nav>
     </>

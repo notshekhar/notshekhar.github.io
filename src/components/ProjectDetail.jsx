@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { useParams, Link } from 'react-router-dom'
+import { useRouter } from '../router'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { 
@@ -50,8 +50,8 @@ function getTechIcon(tech) {
   return techConfig[normalized] || techConfig[tech.toLowerCase()] || null
 }
 
-function ProjectDetail() {
-  const { slug } = useParams()
+function ProjectDetail({ slug }) {
+  const { navigate } = useRouter()
   const [project, setProject] = useState(null)
   const [content, setContent] = useState(null)
   const [loading, setLoading] = useState(true)
@@ -97,9 +97,9 @@ function ProjectDetail() {
         <div className="project-detail-error">
           <h1>Project not found</h1>
           <p>Sorry, details for this project aren't available yet.</p>
-          <Link to="/" className="back-link">
+          <a href="/" onClick={e => { e.preventDefault(); navigate('') }} className="back-link">
             <FiArrowLeft size={16} /> Back to projects
-          </Link>
+          </a>
         </div>
       </section>
     )
@@ -112,9 +112,9 @@ function ProjectDetail() {
     <section className="section active">
       <article className="project-detail">
         <header className="project-detail-header">
-          <Link to="/" className="back-link">
+          <a href="/" onClick={e => { e.preventDefault(); navigate('') }} className="back-link">
             <FiArrowLeft size={16} /> Back to projects
-          </Link>
+          </a>
           
           <div className="project-detail-title-row">
             <div className="project-detail-icon" style={{ color: type.color }}>

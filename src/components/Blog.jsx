@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
 import { FiCalendar, FiTag, FiArrowRight } from 'react-icons/fi'
 import { getAllPosts } from '../utils/blog'
+import { useRouter } from '../router'
 
 function Blog() {
   const [posts, setPosts] = useState([])
@@ -48,6 +48,7 @@ function Blog() {
 }
 
 function BlogCard({ post }) {
+  const { navigate } = useRouter()
   const formatDate = (dateString) => {
     const date = new Date(dateString)
     return date.toLocaleDateString('en-US', { 
@@ -73,12 +74,12 @@ function BlogCard({ post }) {
           )}
         </div>
         <h2 className="blog-card-title">
-          <Link to={`/blog/${post.slug}`}>{post.title}</Link>
+          <a href={`/?p=blog&slug=${post.slug}`} onClick={e => { e.preventDefault(); navigate('blog', post.slug) }}>{post.title}</a>
         </h2>
         <p className="blog-card-excerpt">{post.excerpt}</p>
-        <Link to={`/blog/${post.slug}`} className="blog-read-more">
+        <a href={`/?p=blog&slug=${post.slug}`} onClick={e => { e.preventDefault(); navigate('blog', post.slug) }} className="blog-read-more">
           Read more <FiArrowRight size={14} />
-        </Link>
+        </a>
       </div>
     </article>
   )

@@ -1,18 +1,17 @@
 import { useState, useEffect } from 'react'
-import { useParams, Link } from 'react-router-dom'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { FiCalendar, FiTag, FiArrowLeft } from 'react-icons/fi'
 import { getPostBySlug } from '../utils/blog'
+import { useRouter } from '../router'
 
-function BlogPost() {
-  const { slug } = useParams()
+function BlogPost({ slug }) {
+  const { navigate } = useRouter()
   const [post, setPost] = useState(null)
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    const post = getPostBySlug(slug)
-    setPost(post)
+    setPost(getPostBySlug(slug))
     setLoading(false)
   }, [slug])
 
@@ -30,9 +29,9 @@ function BlogPost() {
         <div className="blog-post-error">
           <h1>Post not found</h1>
           <p>Sorry, that blog post doesn't exist.</p>
-          <Link to="/blog" className="back-link">
+          <a href="/?p=blog" onClick={e => { e.preventDefault(); navigate('blog') }} className="back-link">
             <FiArrowLeft size={16} /> Back to blog
-          </Link>
+          </a>
         </div>
       </section>
     )
@@ -40,20 +39,16 @@ function BlogPost() {
 
   const formatDate = (dateString) => {
     const date = new Date(dateString)
-    return date.toLocaleDateString('en-US', { 
-      year: 'numeric', 
-      month: 'long', 
-      day: 'numeric' 
-    })
+    return date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
   }
 
   return (
     <section className="section active">
       <article className="blog-post">
         <header className="blog-post-header">
-          <Link to="/blog" className="back-link">
+          <a href="/?p=blog" onClick={e => { e.preventDefault(); navigate('blog') }} className="back-link">
             <FiArrowLeft size={16} /> Back to blog
-          </Link>
+          </a>
           <h1 className="blog-post-title">{post.title}</h1>
           <div className="blog-post-meta">
             <span className="blog-date">
@@ -68,11 +63,8 @@ function BlogPost() {
             )}
           </div>
         </header>
-        
         <div className="blog-post-content">
-          <ReactMarkdown remarkPlugins={[remarkGfm]}>
-            {post.content}
-          </ReactMarkdown>
+          <ReactMarkdown remarkPlugins={[remarkGfm]}>{post.content}</ReactMarkdown>
         </div>
       </article>
     </section>
